@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>10</title>
+  </head>
+  <body>
+    <form class="password-form" action="#" type="POST">
+			<label class="input-wrapper">
+				Enter password
+				<input type="password" id="password1"/>
+				<i class="fas fa-eye-slash icon-password" onclick="showPas('password1', this)"></i>
+			</label>
+      <label class="input-wrapper">
+				Сonfirm password
+				<input type="password" id="password2"/>
+				<i class="fas fa-eye-slash icon-password" onclick="showPas('password2', this)"></i>
+			</label>
+      <span class="error-message" id="error-message">passwords must be the same</span>
+			<button type="submit" class="btn" onclick="validatePasswords(event)">continue</button>
+    </form>
+    <script src="index.js"></script>
+  </body>
