@@ -1,0 +1,38 @@
+body{
+    background-color: #bdbdbd;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+h4{
+    margin-bottom: 10px;
+}
+.box-number{
+    display: flex;
+}
+.box{
+    position: absolute;
+    top: 20%;
+    left: calc(50% - 111px);
+    padding: 20px;
+    background-color: #292829;
+    border-radius: 10px;
+    color: white;  
+}
+.number{
+    width: 100px;
+    height: 20px;
+}
+
+#start{
+    height: 26px;
+}
+
+.box-result{
+    display: flex;
+    flex-direction: column;
+}
+.box-result span{
+    margin-bottom: 5px;
+}
