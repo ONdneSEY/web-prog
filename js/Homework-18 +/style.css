@@ -1,0 +1,110 @@
+.content{
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 145px);
+    color: white;
+}
+h2{
+    text-align: center;
+}
+p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-bottom: 5px;
+}
+.box{
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    background-color: rgb(8, 15, 15);
+    padding: 20px;
+    border-radius: 20px;
+    
+}
+
+.button-box{
+    width: 100%;
+}
+
+input{
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 0;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+button{
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(105, 105, 105);
+}
+
+.button-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.leson-box{
+    width: 90%;
+    display: flex;
+    margin-bottom: -1px;
+}
+.leson{
+    width: 65%;
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.evaluation{
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid rgb(255, 255, 255);
+}
+.div-button{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.del{
+    padding: 3px 5px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(253, 56, 56);
+    font-size: 6px;
+    text-align: center;
+}
+
+.totalNam{
+    margin-top: 16px;
+}
+
+.evaluation-log{
+    align-items: baseline;
+}
+
+
+.display-none{
+    display: none;
+}
+.display-flex{
+    display: flex;
+}
+.yes{
+    background-color: rgb(65 163 65);
+}
+
+.no{
+    background-color: rgb(255, 0, 0);
+}
