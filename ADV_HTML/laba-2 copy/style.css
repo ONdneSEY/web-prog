@@ -1,0 +1,307 @@
+:root{
+
+    --font-main: "Montserrat", sans-serif;
+    --font-second: "Roboto", sans-serif;;
+
+
+    --dg-color-dark: #16151B;
+    --dg-color-netral: #302633;
+    --dg-color-light: #ffffff;
+    --dg-color-main: #1B1B25;
+    
+    --text-color-light: #ffffff;
+    --text-color-dark: #FF7AE6;
+    --text-color: #5E304D;
+    --text-color-allocation: #D064A3;
+    --text-gradient: linear-gradient(to right, #68C9FF , #D45B9F)
+}
+
+body{
+    font-family: var(--font-main);
+    font-size: 22.4px;
+    color: var(--text-color-light);
+}
+
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 48px;
+}
+h3{
+    font-size: 42px;
+}
+h4{
+    font-size: 37px;
+}
+h5{
+    font-size: 31px;
+}
+h6{
+    font-size: 20px;
+}
+.pink{
+    color: var(--text-color-allocation);
+}
+.content{
+    width: 390px;
+    margin: 0 auto;
+    background-color: var(--dg-color-dark);
+    display: block;
+}
+.padding-40px{
+    padding: 20px;
+}
+
+
+
+.menu-top{
+    width: 100%;
+}
+.menu-box{
+    padding: 6.16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-box img{
+    height: 32.19px;
+}
+.line{
+    width: 21.07px;
+    background-color: var(--text-color-light);
+    padding: 1.4px;
+    margin: 1.4px;
+    border-radius: 5px;
+}
+
+/* + top-video + */
+.top-video{
+    width: 100%;
+    height: 15.625rem;
+}
+.top-video img{
+    width: 100%;
+    height: 15.625rem;
+}
+/* - top-video - */
+
+/* + we-are-neobrands + */
+.we-are-neobrands{
+    padding: 40px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.we-are-neobrands p{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+}
+.we-are-neobrands h2{
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    background: var(--text-gradient);
+    background-clip: text;
+    color: transparent;
+}
+/* - we-are-neobrands - */
+
+/* + what we do? + */
+.what-we-do{
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.what-text{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-block: 27px;
+}
+.what-text h4{
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 700;
+}
+.what-text p{
+    font-size: 14px;
+    line-height: 24.4px;
+    font-weight: 300;
+}
+.group{
+    padding-block: 18px;
+}
+.group img{
+    height: 15.35rem;
+}
+/* - what we do? - */
+
+/* + customers + */
+
+/* - customers - */
+.customers-img img{
+    width: 24.375rem;
+    height: 20.472rem;
+}
+.customers-img{
+    width: 24.375rem;
+    height: 20.472rem;
+}
+.customers{
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--dg-color-netral);
+}
+.customers h4{
+    font-size: 31px;
+    font-weight: bold;
+    line-height: 34px;
+}
+.customers p{
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 300;
+}
+.prtner-box{
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shopify{
+    width: 5.342rem;
+    height: 1.519rem;
+}
+.click-funnels{
+    width: 6.536rem;
+    height: 1.166rem;
+}
+.amazon{
+    width: 2.899rem;
+    height: 0.876rem;
+}
+/* + Examples For Brands + */
+.examples{
+    padding: 10px 20px 50px;
+}
+.examples-text{
+    padding: 30.57px 8.59px 0.58px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.examples-text p{
+    font-size: 26px;
+    line-height: 31.2px;
+    font-weight: 700;
+}
+.examples-text .pink{
+    font-weight: 200;
+}
+.feedback{
+    padding: 20px;
+}
+.text-dox{
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+.text-dox p{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-block: 20px;
+}
+.text-dox h3{
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50.4px;
+}
+
+.post{
+    background-color: var(--dg-color-netral);
+    padding: 48px 25px 0;
+}
+.post-box{
+    padding: 20px 20px 30px 20px;
+}
+.post-text-box{
+    padding-bottom: 66px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.post-title p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    padding-top: 6px;
+}
+.post-desc p{
+    font-size: 10px;
+    font-weight: 300;
+    line-height: 30px;
+    font-style: italic;
+    color: var(--text-color-allocation);
+}
+.star-box{
+    padding: 6px 0 12px 0;
+    font-size: 12px;
+}
+.star-box i{
+    padding-right: 5px;
+}
+.active-star{
+    color: #FFC300;
+}
+.post-desc img{
+    width: 5rem;
+    height: 1.154rem;
+}
+.box-tab{
+    display: flex;
+    gap: 12px;
+}
+.botton-go-to{
+    padding: 5px;
+    border-radius: 10px;
+    border: 0;
+}
+.active-botton{
+    background-color: var(--text-color-allocation);
+}
+/* - Examples For Brands - */
+
+/* + World Cap + */
+.world-cap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.world-cap img{
+    width: 24.375rem;
+    height: 12.5rem;
+}
+.world-cap .text{
+    width: 10rem;
+    height: 10rem;
+}
+/* - World Cap - */
+
+/* +  + */
+/* -  - */
+/* +  + */
+/* -  - */
+/* +  + */
+/* -  - */
