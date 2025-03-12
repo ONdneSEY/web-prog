@@ -1,6 +1,6 @@
 :root{
 
-    --font-main: "Montserrat", sans-serif;
+    --font-main: "Montserrat", sans-serif;;
     --font-second: "Roboto", sans-serif;;
 
 
@@ -290,18 +290,192 @@ h6{
     gap: 20px;
 }
 .world-cap img{
-    width: 24.375rem;
-    height: 12.5rem;
+    margin: 10px;
+    width: 23.125rem;
+    height: 11.25rem;
+    box-shadow: 1px 0px 40px #584156,
+                0px 1px 40px #584156;
 }
 .world-cap .text{
-    width: 10rem;
-    height: 10rem;
+    margin: 0;
+    width: 20.25rem;
+    height: 6.688rem;
+    box-shadow: none;
 }
 /* - World Cap - */
 
-/* +  + */
-/* -  - */
-/* +  + */
-/* -  - */
-/* +  + */
-/* -  - */
+/* + Meet + */
+.meet{
+    padding: 10px;
+}
+.meet-dox{
+    padding: 43.69px 42.72px 0.69px 42.7px;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 44.4px;
+}
+/* - Meet - */
+/* + Team + */
+.team{
+    padding-left: 20px;
+}
+.team-box{
+    display: flex;
+    gap: 20px;
+    overflow-x: clip;
+}
+.person-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 26px;
+}
+.img-box{
+    padding-bottom: 36px;
+}
+.img-box img{
+    width: 218px;
+    height: 218px;
+}
+.text-box{
+    text-align: center;
+}
+.person-name{
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 1px;
+}
+.text-box .pink{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    font-style: italic;
+}
+
+/* - Team - */
+/* + In Touch + */
+.in-touch{
+    width: 100%;
+    background-image: url(img/Section.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.touch-tex-box{
+    margin-right: 78px;
+    padding: 29px 20px 0;
+}
+.touch-tex-box h4{
+    font-size: 37;
+    font-weight: 700;
+    line-height: 44.4px;
+    padding-bottom: 25px;
+}
+.touch-tex-box p{
+    font-size: 16;
+    font-weight: 200;
+    line-height: 22.4px;
+    padding-bottom: 16px;
+}
+.data-box{
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 30px 15px;
+    gap: 30px;
+}
+.data-box input{
+    margin: 0 5px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+}
+input::placeholder{
+    color: var(--text-color-light);
+}
+.input-data{
+    padding: 19px 31px;
+}
+.input-message{
+    padding: 19px 31px 40px 31px;
+}
+.data-box button{
+    width: 100%;
+    max-width: 108px;
+    border-radius: 40px;
+    margin-left: 5px;
+    padding: 13.8px 33px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid var(--text-color);
+    color: var(--text-color-light);
+}
+/* - In Touch - */
+
+/* + Footer + */
+.footer-box{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.name-section{
+    text-align: center;
+    padding-block: 10px 25px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+}
+.footer-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-section a{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--text-color-light);
+    text-decoration: none;
+}
+.element-box{
+    display: flex;
+    align-items: center;
+}
+.element-box i{
+    padding: 6px 6px 6px 10px;
+    font-size: 12px;
+
+}
+.element-box p{
+    width: 92px;
+    padding: 10px 0 10px 10px;
+    font-size: 10px;
+    line-height: 18px;
+    font-weight: 400;
+}
+.mes-box{
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.fa-brands{
+    width: 30.8px;
+    height: 30.8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 15.4px;
+    color: var(--dg-color-main);
+    background-color: var(--dg-color-light);
+}
+/* - Footer - */
