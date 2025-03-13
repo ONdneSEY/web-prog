@@ -40,6 +40,10 @@ h5{
 h6{
     font-size: 20px;
 }
+a{
+    text-decoration: none;
+    color: var(--text-color-light);
+}
 .pink{
     color: var(--text-color-allocation);
 }
@@ -52,20 +56,34 @@ h6{
 .padding-40px{
     padding: 20px;
 }
-
-
+.flex-box-colum{
+    display: flex;
+    flex-direction: column;
+}
+.flex-box-row{
+    display: flex;
+}
+.title-box-mobile{
+    display: flex;
+    flex-direction: column;
+}
+.customers-title{
+    display: flex;
+    
+}
 
 .menu-top{
     width: 100%;
 }
-.menu-box{
+.menu-box-mobile{
     padding: 6.16px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.menu-box img{
-    height: 32.19px;
+.menu-box-mobile img{
+    width: 187.19px;
+    height: 2.012rem;
 }
 .line{
     width: 21.07px;
@@ -74,7 +92,9 @@ h6{
     margin: 1.4px;
     border-radius: 5px;
 }
-
+.menu-box{
+    display: none;
+}
 /* + top-video + */
 .top-video{
     width: 100%;
@@ -89,39 +109,48 @@ h6{
 /* + we-are-neobrands + */
 .we-are-neobrands{
     padding: 40px 0 40px 0;
-    display: flex;
-    flex-direction: column;
     gap: 20px;
+}
+.we-are-neobrands-box{
+    align-items: center;
 }
 .we-are-neobrands p{
     font-size: 20px;
     line-height: 24px;
     font-weight: 200;
     font-style: italic;
-    text-align: center;
 }
-.we-are-neobrands h2{
+.we-are-neobrands-text-box h2{
+    float: left;
     font-size: 48px;
     line-height: 50px;
     font-weight: 900;
     font-style: italic;
-    text-align: center;
     background: var(--text-gradient);
     background-clip: text;
     color: transparent;
+    text-align: center;
+}
+.big{
+    display: none;
 }
 /* - we-are-neobrands - */
 
 /* + what we do? + */
 .what-we-do{
-    padding: 10px 20px;
     display: flex;
-    flex-direction: column;
+    padding: 10px 20px;
+    align-items: center;
+}
+.what-we-do-box{
+    width: 70%;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
 }
 .what-text{
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 24px;
     padding-block: 27px;
@@ -147,14 +176,20 @@ h6{
 /* + customers + */
 
 /* - customers - */
-.customers-img img{
-    width: 24.375rem;
-    height: 20.472rem;
+.customers-box{
+    width: 100%;
+    align-items: center;
+    position: relative;
 }
+
 .customers-img{
-    width: 24.375rem;
+    width: 100%;
     height: 20.472rem;
+    background-image: url(img/Untitlebgbd-2-768x645.png.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
+
 .customers{
     padding: 60px 40px;
     display: flex;
@@ -162,9 +197,13 @@ h6{
     gap: 20px;
     background-color: var(--dg-color-netral);
 }
-.customers h4{
+.customers-title{
+    display: flex;
+    flex-direction: column;
+}
+.customers-title h4{
     font-size: 31px;
-    font-weight: bold;
+    font-weight: 700;
     line-height: 34px;
 }
 .customers p{
@@ -479,3 +518,4 @@ input::placeholder{
     background-color: var(--dg-color-light);
 }
 /* - Footer - */
+
