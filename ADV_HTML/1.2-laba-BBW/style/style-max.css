@@ -1,0 +1,105 @@
+@media screen and (min-width: 960px){
+    h1{
+        font-size: 60.00px;
+        line-height: 72.00px;
+    }
+    h2{
+        font-size: 48.00px;
+        line-height: 60.00px;
+    }
+    h3{
+        font-size: 40.00px;
+        line-height: 48.00px;
+    }
+    h4{
+        font-size: 32.00px;
+        line-height: 36.00px;
+    }
+    h5{
+        font-size: 24.00px;
+        line-height: 32.00px;
+    }
+    h6{
+        font-size: 20.00px;
+        line-height: 24.00px;
+    }
+    .p-large{
+        font-size: 18.00px;
+        line-height: 28.00px;
+        font-family: var(--font-paragraph);
+        color: var(--text-color-Off-White);
+    }
+    p, button, li, a{
+        font-size: 16.00px;
+        line-height: 24.00px;
+        font-family: var(--font-paragraph);
+        color: var(--text-color-Off-White);
+    }
+
+    body{
+        max-width: 1920px;
+    }
+    .mobile{
+        display: none;
+    }
+    .big{
+        display: flex;
+    }
+
+/* + top-menu + */
+.logo{
+    padding: 22px 59px;
+    border: 1px dashed var(--dg-color-Blue);
+    background: transparent;
+    font-weight: 700;
+}
+.top-menu-list-icon{
+   height: 16px;
+   justify-content: space-between;
+}
+/* - top-menu - */
+
+    /* + header + */
+
+    .header-box{
+        padding-block: 160px;
+    }
+    .header-text-box{
+        align-items: center;
+    }
+    
+    /* - header - */
+
+
+    /* + log-box + */
+    .log-box{
+        padding-block: 160px;
+        background-image: url(/ADV_HTML/1.2-laba-BBW/img/SectionSeparator/Top\ Grid.png);
+        background-size: 100% 7%;
+        background-position: 100% 0%;
+        background-repeat: no-repeat;
+    }
+    .log-box-grid{
+        display: grid;
+        gap: 30px;
+    }
+    .log-content-box-grid{
+        padding: 10px;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        gap: 100px;
+    }
+    .grid-conversely{
+        grid-template-columns: 50% 50%;
+    }
+    .log-content-box-grid p{
+        width: 70%;
+    }
+    .log-content-box-grid img{
+        width: 40%;
+    }
+    .log-text-box{
+        gap: 7px;
+    }
+    /* - log-box - */
+}

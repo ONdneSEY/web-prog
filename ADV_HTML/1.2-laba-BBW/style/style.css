@@ -1,0 +1,232 @@
+:root{
+
+    --font-main:"Bai Jamjuree", sans-serif;
+    --font-paragraph: "Bai Jamjuree", sans-serif;
+    --font-Button: "Bai Jamjuree", sans-serif;
+
+
+    --dg-color-Blue: #01B2FD;
+    --dg-color-Deep-Blue: #0E0D24;
+    --dg-color-Fuschia: #DA3FCA;
+    --dg-color-Off-White: #F6ECF4;
+    --dg-color-Purple: #7960FF;
+    
+    --text-color-Blue: #01B2FD;
+    --text-color-Deep-Blue: #0E0D24;
+    --text-color-Fuschia: #DA3FCA;
+    --text-color-Off-White: #F6ECF4;
+    --text-color-Purple: #7960FF;
+   
+    --text-gradient: linear-gradient(to right, #68C9FF , #D45B9F)
+}
+h1, h2, h3, h4, h5, h6{
+    font-size: var(--font-main);
+    color: var(--text-color-Off-White);
+}
+h1{
+    font-size: 20.00px;
+    line-height: 24.00px;
+}
+h2{
+    font-size: 18.00px;
+    line-height: 20.00px;
+}
+h3{
+    font-size: 16.00px;
+    line-height: 18.00px;
+}
+h4{
+    font-size: 14.00px;
+    line-height: 16.00px;
+}
+h5{
+    font-size: 12.00px;
+    line-height: 14.00px;
+}
+h6{
+    font-size: 10.00px;
+    line-height: 12.00px;
+}
+.p-large{
+    font-size: 9.00px;
+    line-height: 14.00px;
+    font-family: var(--font-paragraph);
+    color: var(--text-color-Off-White);
+}
+p, button, li, a{
+    font-size: 8.00px;
+    line-height: 12.00px;
+    font-family: var(--font-paragraph);
+    color: var(--text-color-Off-White);
+    text-decoration: none;
+}
+button{
+    font-weight: 700;
+}
+li{
+    color: var(--text-color-Fuschia);
+}
+span{
+    color: var(--text-color-Off-White);
+}
+.width{
+    width: 80%;
+}
+.flex-center-box{
+    display: flex;
+    align-items: center;
+}
+.flex-box-column{
+    display: flex;
+    flex-direction: column;
+}
+.flex-box-column-mobile{
+    display: flex;
+    flex-direction: column;
+}
+.big{
+    display: none;
+}
+.margin-center{
+    margin: 0 auto;
+}
+.pink-text{
+    color: var(--text-color-Fuschia);
+}
+
+
+/* + + */
+body{
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    font-family: var(--font-paragraph);
+    color: var(--text-color-Off-White);
+}
+.content{
+    background: var(--dg-color-Deep-Blue);
+}
+.point{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    margin-inline: 4px;
+    background: var(--dg-color-Fuschia);
+}
+/* - - */
+
+/* + top-menu + */
+.top-menu{
+    padding-block: 10px;
+    justify-content: space-between;
+}
+.mein-button{
+    padding: 8px 12px;
+    background-color: var(--dg-color-Purple);
+    border: 0;
+    border-radius: 32px;
+}
+.logo{
+    padding: 11px 29px;
+    border: 1px dashed var(--dg-color-Blue);
+    background: transparent;
+}
+.top-menu-list{
+    gap: 62px;
+}
+.top-menu-list-icon{
+   height: 16px;
+   justify-content: space-between;
+}
+.white-line{
+    width: 22px;
+    height: 3px;
+    background: var(--text-color-Off-White);
+    border-radius: 32px;
+}
+/* - top-menu - */
+
+/* + header + */
+header{
+    background-image: url(/ADV_HTML/1.2-laba-BBW/img/SectionSeparator/Bottom\ Grid.png);
+    background-size: 100% 20%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.header-box{
+    align-items: center;
+    gap: 12px;
+    padding-block: 30px;
+}
+.header-text-box{
+    align-items: center;
+}
+header .flex-center-box{
+    justify-content: center;
+}
+/* - header - */
+
+/* + log-box + */
+.log-box{
+    padding-block: 30px;
+    background-image: url(/ADV_HTML/1.2-laba-BBW/img/SectionSeparator/Top\ Grid.png);
+    background-size: 100% 7%;
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+}
+.log-box-grid{
+    display: grid;
+    gap: 30px;
+}
+.log-content-box-grid{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    align-items: center;
+    justify-items: center;
+}
+.grid-conversely{
+    grid-template-columns: 1fr 4fr;
+}
+.log-content-box-grid img{
+    width: 90%;
+}
+.log-text-box{
+    gap: 7px;
+}
+/* - log-box - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
+
+/* +  + */
+/* -  - */
