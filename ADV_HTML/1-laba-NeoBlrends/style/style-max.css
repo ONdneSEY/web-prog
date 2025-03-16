@@ -1,0 +1,336 @@
+:root{
+
+    --font-main: "Montserrat", sans-serif;;
+    --font-second: "Roboto", sans-serif;;
+
+
+    --dg-color-dark: #16151B;
+    --dg-color-netral: #302633;
+    --dg-color-light: #ffffff;
+    --dg-color-main: #1B1B25;
+    --dg-color-button: #643E6B;
+    
+    --text-color-light: #ffffff;
+    --text-color-dark: #FF7AE6;
+    --text-color: #5E304D;
+    --text-color-allocation: #D064A3;
+    --text-gradient: linear-gradient(to right, #68C9FF , #D45B9F);
+    --text-gradient-button: linear-gradient(to right, #68C9FF, #D45B9F ,#68C9FF);
+
+
+}
+@media screen and (min-width: 1280px) {
+    .content{
+        width: 100%;
+    }
+    .title-box-mobile{
+        flex-direction: row;
+    }
+    .padding-40px{
+        padding: 110px;
+    }
+    .mobile{
+        display: none;
+    }
+    .big{
+        display: block;
+    }
+    /* + menu-box + */
+    .menu-box-mobile{
+        display: none;
+    }
+    .menu-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 84px 0 89px;
+        font-size: 12.5px;
+        font-weight: 500;
+    }
+    .menu-box img{
+        height: 2.454rem;
+        padding: 0 13px 6px;
+    }
+    .menu-list a{
+        padding: 0px 19px 28px;
+    }
+    .menu-list a:hover{
+        border-bottom: 1px solid ;
+    }
+    .button{
+        float: left;
+        margin-top: 13px;
+        margin-bottom: 21px;
+        padding: 5px 20px;
+        background: var(--text-gradient-button);
+        border-radius: 44px;
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 200;
+    }
+    /* - menu-box - */
+
+    /* + top-video + */
+    .top-video{
+        display: none;
+    }
+    /* - top-video - */
+
+    /* + we-are-neobrands + */
+    .we-are-neobrands{
+        background-image: url(/aDV_HTML/1-laba-NeoBlrends/img/revised-03-3.mp4.png);
+    }
+    .we-are-neobrands-box{
+        width: 70%;
+        align-items: baseline;
+        padding-block: 270.91px 270.9px;
+        margin: 0 auto;
+    }
+    .we-are-neobrands h2{
+        padding-block: 12px 64px;
+    }
+    .button-tow{
+        display: block;
+
+    }
+    /* - we-are-neobrands - */
+
+    /* + what-we-do + */
+    .what-we-do{
+        padding-block: 129px  137px;
+        justify-content: space-between;
+    }
+    .what-text{
+        width: 478px;
+        align-items: flex-start;
+    }
+    .what-we-do-box{
+        text-align: left;
+    }
+    .group{
+        padding: 0;
+    }
+    .group img{
+        height: 382.23px;
+    }
+    /* - what-we-do - */
+    
+    /* + customers + */
+    .customers-img {
+        height: 37.5rem;
+        background-image: url(/aDV_HTML/1-laba-NeoBlrends/img/Untitlebgbd-2-1920x1080.png);
+        background-size: 90% 100%;
+    }
+    .customers{
+        width: 40%;
+        position: absolute;
+        top: 12%;
+        right: 0;
+    }
+    .customers{
+        padding: 80px 100px ;
+        gap: 24px;
+    }
+    .customers h4{
+        font-size: 33px;
+        font-weight: 900;
+        line-height: 32px;
+    }
+    .customers p{
+        font-size: 17px;
+        line-height: 29.8px;
+        font-weight: 400;
+    }
+    .customers-title div h4{
+        font-size:25px;
+    }
+    .prtner-box{
+        padding: 0;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    .shopify{
+        width: 105.47px;
+        height: 30px;
+    }
+    .click-funnels{
+        width: 134.57px;
+        height: 24px;
+    }
+    .amazon{
+        width: 79.52px;
+        height: 24px;
+    }
+    /* - customers - */
+
+    /* + Examples For Brands + */
+    .examples{
+        padding: 10px;
+    }
+    .examples-text{
+        padding: 0;
+        padding-top: 32px;
+        text-align: center;
+        gap: 12px;
+    }
+    .examples-text p{
+        font-size: 34px;
+        line-height: 32.4px;
+        font-weight: 700;
+    }
+    .brands-conteiner{
+        display: grid;
+
+    }
+    /* - Examples For Brands - */
+
+    /* + feedback + */
+    .feedback{
+        padding: 200px 0 200px 0;
+        background-size: 100% 100%;
+        background-position: 100% 100%;
+    }
+    .feedback-box{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        padding: 0 20px 0 20px;
+    }
+    .post{
+        width: calc(55% - 40px);
+        padding: 90px 5px 99.59px 45px;
+    }
+    .post-box{
+        padding: 20px 33px 20px 33px;
+    }
+    .post-text-box{
+        padding-bottom: 54px;
+    }
+    .post-desc{
+        margin-top: 10px;
+    }
+    /* - feedback - */
+
+    /* + Meet + */
+    .meet{
+        display: flex;
+        justify-content: center;
+        padding: 120px 0 0 0;
+    }
+    .meet-dox{
+        padding: 0;
+        padding-bottom: 54px;
+        font-size: 37px;
+        font-weight: 700;
+        line-height: 44.4px;
+    }
+    /* - Meet - */
+
+    /* + Team + */
+    .team{
+        width: 90%;
+        margin: 0 auto;
+        padding-left: 0;
+        padding-bottom: 160px;
+    }
+    .team-box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 87px;
+        overflow-x: none;
+        
+    }
+    .person-box{
+
+        gap: 36px;
+        padding-top: 26px;
+    }
+    .img-box{
+        padding-bottom: 0;
+    }
+    .img-box img{
+        width: 218px;
+        height: 218px;
+    }
+    .text-box{
+        text-align: center;
+    }
+    .person-name{
+        font-size: 18px;
+    }
+    .text-box .pink{
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 24px;
+        font-style: italic;
+    }
+    /* - Team - */
+
+    /* +  In Touch + */
+    .in-touch{
+        width: 100%;
+        background-image: url(/aDV_HTML/1-laba-NeoBlrends/img/Section.png);
+        padding: 127px 0;
+    }
+    .in-touch-box{
+        width: 60%;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .touch-tex-box{
+        width: 45%;
+        margin-right: 0;
+        padding: 0;
+    }
+    .touch-tex-box h4{
+        font-size: 42px;
+        line-height: 50.4px;
+        padding-bottom: 24px;
+    }
+    .data-box{
+        width: 45%;
+        padding: 5px;
+        gap: 20px;
+    }
+    .input-data:focus-visible{
+        outline: pink;
+    }
+    .input-message{
+        padding: 19px 31px 70px 31px;
+    }
+    /* -  In Touch - */
+
+    /* + footer  + */
+    .footer-box{
+        width: 80%;
+        grid-template-columns: 1fr 3fr ;
+    }
+    .footer-section-box{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /* - footer - */
+    
+}
+@media screen and (min-width: 1500px){
+    .customers-title div h4{
+        font-size: 31px;
+        font-weight: 700;
+        line-height: 34px;
+    }
+    .post-title.big{
+        width: 380px;
+    }
+    .customers {
+        top: 15%;
+    }
+}
+@media screen and (min-width: 1920px) {
+    .content{
+        width: 1920px;
+    }
+}

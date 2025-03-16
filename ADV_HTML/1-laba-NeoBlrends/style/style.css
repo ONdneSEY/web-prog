@@ -7,7 +7,7 @@
     --dg-color-dark: #16151B;
     --dg-color-netral: #302633;
     --dg-color-light: #ffffff;
-    --dg-color-main: #1B1B25;
+    --dg-color-main: #1C1C27;
     
     --text-color-light: #ffffff;
     --text-color-dark: #FF7AE6;
@@ -71,6 +71,9 @@ a{
     display: flex;
     
 }
+.big{
+    display: none;
+}
 
 .menu-top{
     width: 100%;
@@ -104,6 +107,16 @@ a{
     width: 100%;
     height: 15.625rem;
 }
+.button-tow{
+    padding: 12px 30px;
+    background-color: var(--dg-color-button);
+    border-radius: 18px;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 600;
+    float: left;
+    box-shadow: 0px 0px 20px 6px #4B2A4E;
+}
 /* - top-video - */
 
 /* + we-are-neobrands + */
@@ -131,8 +144,15 @@ a{
     color: transparent;
     text-align: center;
 }
-.big{
-    display: none;
+.button-tow{
+    padding: 12px 30px;
+    background-color: var(--dg-color-button);
+    border-radius: 18px;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 600;
+    float: left;
+    box-shadow: 0px 0px 20px 6px #4B2A4E;
 }
 /* - we-are-neobrands - */
 
@@ -174,8 +194,6 @@ a{
 /* - what we do? - */
 
 /* + customers + */
-
-/* - customers - */
 .customers-box{
     width: 100%;
     align-items: center;
@@ -185,7 +203,7 @@ a{
 .customers-img{
     width: 100%;
     height: 20.472rem;
-    background-image: url(img/Untitlebgbd-2-768x645.png.png);
+    background-image: url(/aDV_HTML/1-laba-NeoBlrends/img/Untitlebgbd-2-768x645.png.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -198,10 +216,10 @@ a{
     background-color: var(--dg-color-netral);
 }
 .customers-title{
-    display: flex;
+
     flex-direction: column;
 }
-.customers-title h4{
+.customers-title div h4{
     font-size: 31px;
     font-weight: 700;
     line-height: 34px;
@@ -229,15 +247,22 @@ a{
     width: 2.899rem;
     height: 0.876rem;
 }
+/* - customers - */
+/* + main + */
+main{
+    width: 100%;
+    background-color: var(--dg-color-main);
+}
+/* - main - */
 /* + Examples For Brands + */
 .examples{
+    align-items: center;
+    gap: 100px;
     padding: 10px 20px 50px;
 }
 .examples-text{
     padding: 30.57px 8.59px 0.58px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 .examples-text p{
     font-size: 26px;
@@ -247,8 +272,41 @@ a{
 .examples-text .pink{
     font-weight: 200;
 }
+.brands-conteiner{
+    width: 70%;
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    list-style-type: none;
+}
+.brands-conteiner-item{
+    text-align: center;
+    height: 60px;
+    padding: 40px 0 40px;
+}
+.brands-conteiner-item.bottom{
+    text-align: center;
+    height: 60px;
+    padding: 60px 0 20px;
+}
+.top{
+    border-bottom: 1px solid var(--text-color-allocation);
+}
+.center{
+    border-left: 1px solid var(--text-color-allocation);
+    border-right: 1px solid var(--text-color-allocation);
+}
+/* - Examples For Brands - */
+
+/* + feedback + */
 .feedback{
     padding: 20px;
+    background-image: url(/aDV_HTML/1-laba-NeoBlrends/img/Feedback.png);
+    background-size: 100% 25%;
+    background-position: 100% 50%;
+    background-repeat: no-repeat;
 }
 .text-dox{
     padding-right: 20px;
@@ -261,6 +319,7 @@ a{
     padding-block: 20px;
 }
 .text-dox h3{
+    width: 320px;
     font-size: 42px;
     font-weight: 700;
     line-height: 50.4px;
@@ -275,8 +334,6 @@ a{
 }
 .post-text-box{
     padding-bottom: 66px;
-    display: flex;
-    flex-direction: column;
     gap: 8px;
 }
 
@@ -285,6 +342,9 @@ a{
     font-weight: 500;
     line-height: 14px;
     padding-top: 6px;
+}
+.post-title.big{
+    
 }
 .post-desc p{
     font-size: 10px;
@@ -319,14 +379,24 @@ a{
 .active-botton{
     background-color: var(--text-color-allocation);
 }
-/* - Examples For Brands - */
+/* + feedback + */
 
 /* + World Cap + */
 .world-cap{
-    display: flex;
+    width: 100%;
+    background-image: url(/aDV_HTML/1-laba-NeoBlrends/img/World-1992_1.mp4.png);
+    background-position: 127% 0%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 105.39px 0 105.41px 0;
     align-items: center;
-    flex-direction: column;
+}
+.world-cap-box{
+    align-items: center;
+    justify-content: space-between;
     gap: 20px;
+    width: 60%;
+    margin: 0 auto;
 }
 .world-cap img{
     margin: 10px;
@@ -398,7 +468,7 @@ a{
 /* + In Touch + */
 .in-touch{
     width: 100%;
-    background-image: url(img/Section.png);
+    background-image: url(/aDV_HTML/1-laba-NeoBlrends/img/Section-mini.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -431,10 +501,11 @@ a{
     margin: 0 5px;
     border-radius: 20px;
     background-color: transparent;
+    color: var(--text-color-dark);
     border: 1px solid var(--text-color);
 }
 input::placeholder{
-    color: var(--text-color-light);
+    color: var(--dg-color-light);
 }
 .input-data{
     padding: 19px 31px;
@@ -457,11 +528,14 @@ input::placeholder{
 
 /* + Footer + */
 .footer-box{
-    padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    padding: 70px 12px;
     align-items: center;
     gap: 20px;
+    margin: 0 auto;
+}
+.footer-box img{
+    margin: 0 auto;
 }
 .name-section{
     text-align: center;
