@@ -1,0 +1,128 @@
+@media screen and (min-width: 768px ) {
+    h1{
+        font-size: 48;
+        font-weight: 400;
+    }
+    h2{
+        font-size: 46;
+        font-weight: 400;
+    }
+    
+    h3{
+        font-size: 28;
+        font-weight: 300;
+    }
+    .continent{
+        max-width: 768px;
+    }
+    .tablet_flex{
+        display: flex;
+    }
+    .tablet{
+        display: block;
+    }
+    .width_content{
+        width: 90%;
+    }
+    .point{
+        padding: 6px;
+    }
+            /* + + + HEADEER + + + */
+    /* + Menu Top + */
+    .logo{
+        width: 61px;
+    }
+    header{
+        padding: 21px 0 30px;
+    }
+    .menu_list{
+        gap: 8px;
+    }
+    .menu_list_line{
+        width: 21px;
+        height: 1px;
+    }
+    .heder-text{
+        width: 70%;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 50px;
+        padding: 0px;
+    }
+    .heder-text p{
+        font-size: 60px;
+    }
+    /* - Menu Top - */
+
+        /* - - - HEADEER - - - */
+
+        /* +++ information_conteiner +++ */
+        .information_conteiner{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 39px;
+        }
+        .information_logo{
+            width: 39px;
+        }
+        .information_box{
+            height: 88px;
+            gap: 20px;
+
+        }
+        .information_top_text{
+    
+            margin-bottom: 0px;
+        }
+        .information_big_text{
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 700;
+            padding-right: 3px;
+        }
+        .information_mid_text{
+            font-size: 10px;
+            font-weight: 400;
+        }
+        .information_small_text{
+            font-size: 10px;
+            font-weight: 400;
+        }
+        /* --- information_conteiner --- */
+        
+        /* +++ earn_more +++ */
+    .p_10_mobile{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .retreat_mobile{
+        display: grid;
+        gap: 31px;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+        /* --- earn_more --- */
+        
+     /* + + + drop_down_list_conteiner + + + */
+.drop_down_list_conteiner_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.drop_down_list_img{
+    width: 100%;
+    height: 610px;
+    background-image: url(/ADV_HTML/4-laba_HIGHBERRY/img/imges/stroberi_tablet.png);
+    background-size: 100% 100%;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+}
+.drop_down_list_point{
+    top: 4px;
+}
+.drop_down_list_line{
+    top: 4px;
+    left: 7px;
+    padding: 17% 0.2%;
+}
+    /* - - - drop_down_list_conteiner - - - */
+}

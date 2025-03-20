@@ -55,7 +55,8 @@
         padding: 0px 19px 28px;
     }
     .menu-list a:hover{
-        border-bottom: 1px solid ;
+        border-bottom: 1px solid;
+        border-image: linear-gradient(to right, #68C9FF , #D45B9F) 47% 0%;
     }
     .button{
         float: left;

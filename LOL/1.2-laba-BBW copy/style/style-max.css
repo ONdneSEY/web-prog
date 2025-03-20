@@ -1,0 +1,92 @@
+@media screen and (min-width: 960px){
+    h1{
+        font-size: 60.00px;
+        line-height: 72.00px;
+    }
+    h2{
+        font-size: 48.00px;
+        line-height: 60.00px;
+    }
+    h3{
+        font-size: 40.00px;
+        line-height: 48.00px;
+    }
+    h4{
+        font-size: 32.00px;
+        line-height: 36.00px;
+    }
+    h5{
+        font-size: 24.00px;
+        line-height: 32.00px;
+    }
+    h6{
+        font-size: 20.00px;
+        line-height: 24.00px;
+    }
+    .p-large{
+        font-size: 18.00px;
+        line-height: 28.00px;
+        font-family: var(--font-paragraph);
+        color: var(--text-color-Off-White);
+    }
+    p, button, li, a{
+        font-size: 16.00px;
+        line-height: 24.00px;
+    }
+
+    body{
+        max-width: 1440px;
+    }
+    .mobile{
+        display: none;
+    }
+    .big{
+        display: flex;
+    }
+    .text-box{
+        gap: 16px;
+    }
+    .main-button{
+        padding: 16px 24px;
+    }
+
+/* + top-menu + */
+.logo{
+    padding: 22px 59px;
+    border: 1px dashed var(--dg-color-Blue);
+    background: transparent;
+    font-weight: 700;
+}
+.top-menu-list-icon{
+   height: 16px;
+   justify-content: space-between;
+}
+/* - top-menu - */
+
+    /* + header + */
+
+    .header-box{
+        padding-block: 160px;
+    }
+    .header-text-box{
+        align-items: center;
+    }
+    
+    /* - header - */
+
+
+    /* + log-box + */
+    .log-box{
+        padding-block: 160px;
+    }
+    .log-box-grid{
+        gap: 60px;
+    }
+    .log-content-box-grid{
+        padding: 10px;
+        grid-template-columns: 1fr 1fr;
+        gap: 120px;
+    }
+   
+    /* - log-box - */
+}
