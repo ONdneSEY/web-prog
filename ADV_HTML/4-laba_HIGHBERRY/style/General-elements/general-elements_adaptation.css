@@ -1,0 +1,422 @@
+@media screen and (min-width: 768px ){
+     /* +++ information_conteiner +++ */
+     .information_conteiner{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 39px;
+    }
+    .information_logo{
+        width: 42px;
+    }
+    .information_box{
+        height: 88px;
+        gap: 20px;
+    }
+    .information_top_text{
+        margin-bottom: 0px;
+    }
+    .information_big_text{
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 700;
+        padding-right: 3px;
+    }
+    .information_mid_text{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .information_small_text{
+        font-size: 10px;
+        font-weight: 400;
+    }
+        /* --- information_conteiner --- */
+    
+        /* + + + drop_down_list_conteiner + + + */
+    .drop_down_list_conteiner_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .drop_down_list_img{
+        width: 100%;
+        height: 557px;   
+    }
+    .tachnological{
+        height: 576px;
+    }
+    .cultivation {
+        
+    }
+    .drop_down_list_conteiner{
+        width: 90%;
+        padding: 30px 0 0;
+    }
+    .drop_down_list_description_box p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .drop_down_list_point{
+        top: 10.5px;
+    }
+    .drop_down_list_line{
+        top: 11px;
+        left: 6.5px;
+
+    }
+        /* - - - drop_down_list_conteiner - - - */
+        
+        /* + + + learn_more + + + */
+    .learn_more_text{
+        font-size: 14px;
+    }
+        /* - - - learn_more - - - */
+
+        /* + + + logistics_conteiner_grid + + + */
+    .logistics_conteiner{
+        padding: 51px 27px;
+        border-radius: 10px;
+        border: 1px solid var(--border-color-information);
+    }
+    .logistics_conteiner_grid{
+        width: 100%;
+        grid-template-columns: 1fr 15fr 1fr;
+
+    }
+    .logistics_conteiner_content_logo_grid{
+        display: grid;
+        justify-content: center;
+        align-content: space-between;
+    }
+    .logistics_conteiner_content_logo_item{
+        height: 40px;
+    }
+    .logistics_informatiom{
+        display: none;
+    }
+    .logistics_conteiner_content_map img{
+        width: 90%;
+    }
+        /* - - - logistics_conteiner_grid - - - */
+
+
+        /* open header_pages_type_one_bg */
+    .header_pages_type_one_bg_box{
+        height: 240px;
+        margin-bottom: 300px;
+    }
+    .header_pages_type_one_bg_box_margin{
+        margin-bottom: 220px;
+    }
+    .header_pages_type_one{
+        width: 79.5%;
+        top: 55%;
+        left: 10%;
+    }
+    .header_pages_type_one_conteiner{
+        padding: 30px 50px;
+    }
+    .header_pages_type_one_title{
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 20px;
+    }
+    .header_pages_type_one_line{
+        width: 300px;
+        height: 1px;
+        background-color: var(--dg-color-light-green);
+    }
+    p.header_pages_type_one_text{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .header_pages_type_one_information_box{
+        width: 100%;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+    }
+    .header_pages_type_one_information_logo{
+        width: 40px;
+    }
+    .header_pages_type_one_big_text{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .header_pages_type_one_small_text{
+        font-size: 7px;
+        line-height: 12px;
+    }
+    .header_pages_type_one_middle_text{
+        font-size: 9px;
+        line-height: 15px;
+    }
+        /* close header_pages_type_one_bg */
+
+        /* botton_showrell_box */
+     .botton_showrell_box{
+        width: 53%;
+        margin: 0 auto;
+        gap: 5%;
+        border-radius: 5px;
+        padding: 19.5px 0;
+        margin-bottom: 60px;
+    }
+    .botton_showrell_box p{
+        font-size: 22.11px;
+    }
+    .botton_showrell{
+        width: 40px;
+    }
+      
+    /* botton_showrell_box */
+     /* information_box_type_three */
+    .information_box_type_three{
+        align-items: center;
+        grid-template-columns: 1fr 2fr;
+        padding: 5%;
+    }
+    .information_box_type_three_logo{
+        width: 92.65%;
+    }
+    .information_box_type_three_text_box{
+        gap: 20px;
+    }
+    .information_box_type_three_title{
+        font-size: 48px;
+        line-height: 45px;
+    }
+    .information_box_type_three_line{
+        width: 220px;
+    }
+    .information_box_type_three_text{
+        font-size: 40px;
+        line-height: 45px;
+    }
+        /* information_box_type_three */
+
+    /* type_of_information_box_small_type_two */
+    .type_of_information_box_small_type_two_box{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px 30px;
+    }
+    .type_of_information_box_small_type_two{
+        width: 94%;
+        padding: 10% 3%;
+    }
+    .type_of_information_box_type_two{
+        padding: 5% ;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .type_of_information_box_small_type_two_logo_box{
+        top: -25px;
+    }
+    .type_of_information_box_type_two_logo_box{
+        top: -25px;
+    }
+    .type_of_information_box_small_type_two_logo{
+        width: 20%;
+    }
+    .type_of_information_box_type_two_logo{
+        width: 5.9%;
+    }
+        /* type_of_information_box_small_type_two */
+        /* information_box_type_three_small */
+    .information_box_type_three_small{
+        padding: 4% 8%;
+    }
+    .information_box_type_three_small_text{
+        font-size: 16px;
+        line-height: 30px;
+    }
+        /* information_box_type_three_small */
+        
+        /* type_of_information_box_type_two */
+    .type_of_information_box_type_two_title{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 25px;
+        color: var(--dg-color-light-green);
+    }
+        /* type_of_information_box_type_two */
+
+        /* information_box_type_two_big */
+    .information_box_type_two_big{
+        width: 96%;
+        padding: 5% 0;
+        grid-template-columns: 1.5fr 1.5fr 2fr;
+    }
+    .information_box_type_two_big_logo {
+        width: 39px;
+    }
+    .information_box_type_two_big_text_box{
+        grid-column-end: 3;
+        grid-column-start: 0;
+        grid-row-end: 1;
+        grid-row-start: 1;
+        display: flex;
+        padding-top: 5%;
+    }
+    .information_box_type_two_big_line{
+        height: 112.44px;
+        width: 1px;
+        margin: 0 30px 0 0;
+    }
+    .information_box_type_two_big_text_box{
+        font-size: 12px;
+    }
+        /* information_box_type_two_big */
+
+    
+ }
+ 
+ @media screen and (min-width: 1320px){
+        /* open header_pages_type_one_bg */
+    .header_pages_type_one_bg_box{
+        height: 450px;
+        margin-bottom: 420px;
+    }
+    .header_pages_type_one_bg_box_margin{
+        margin-bottom: 280px;
+    }
+    .header_pages_type_one{
+        width: 60%;
+        top: 55.5%;
+        left: 20%;
+    }
+    .header_pages_type_one_conteiner{
+        padding: 60px 80px 80px;
+        gap: 60px;
+    }
+    .header_pages_type_one_title{
+        font-size: 48px;
+        line-height: 50px;
+        padding-bottom: 20px;
+    }
+    .header_pages_type_one_line{
+        width: 496px;
+    }
+    p.header_pages_type_one_text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .header_pages_type_one_information_logo{
+        width: 56px;
+    }
+    .header_pages_type_one_big_text{
+        font-size: 24px;
+        line-height: 25px;
+    }
+    .header_pages_type_one_small_text{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .header_pages_type_one_middle_text{
+        font-size: 15px;
+        line-height: 15px;
+    }
+        /* close header_pages_type_one_bg */
+    /* botton_showrell_box */
+    .botton_showrell_box{
+        width: 48.612%;
+        margin: 0 auto;
+        gap: 5%;
+        border-radius: 5px;
+        padding: 29px 0;
+        margin-bottom: 60px;
+    }
+    .botton_showrell_box p{
+        font-size: 36px;
+    }
+    .botton_showrell{
+        width: 40px;
+    }
+      
+    /* botton_showrell_box */
+
+        /* information_box_type_three */
+    .information_box_type_three{
+        align-items: center;
+        grid-template-columns: 1fr 2fr;
+        padding: 5% 10%;
+    }
+    .information_box_type_three_logo{
+        width: 81%;
+    }
+    .information_box_type_three_text_box{
+        gap: 30px;
+    }
+    .information_box_type_three_title{
+        font-size: 46px;
+        line-height: 45px;
+    }
+    .information_box_type_three_title br{
+        display: none;
+    }
+    .information_box_type_three_text{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .information_box_type_three_text br{
+        display: none;
+    }
+        /* information_box_type_three */
+
+        /* information_box_type_three_small */
+    .information_box_type_three_small{
+        padding: 3% 7%;
+    }
+    .information_box_type_three_small_text{
+        font-size: 20px;
+        line-height: 25px;
+    }
+        /* information_box_type_three_small */
+
+    /* type_of_information_box_small_type_two */
+    .type_of_information_box_small_type_two_box{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+    .type_of_information_box_small_type_two{
+        width: 80%;
+        padding: 15% 10%;
+    }
+
+    .type_of_information_box_type_two{
+        padding: 6% ;
+        width: 88%;
+    }
+    .type_of_information_box_small_type_two_logo_box{
+        top: -40px;
+    }
+    .type_of_information_box_small_type_two_logo_box{
+        width: 21.37%;
+    }
+    .type_of_information_box_small_type_two_logo{
+        width: 100%;
+    }
+    .type_of_information_box_type_two_logo{
+        width: 6.08%;
+    }
+        /* type_of_information_box_small_type_two */
+        
+        /* type_of_information_box_type_two */
+    .type_of_information_box_type_two_title{
+        font-size: 28px;
+        line-height: 40px;
+    }
+        /* type_of_information_box_type_two */
+        /* information_box_type_two_big */
+    .information_box_type_two_big{
+        width: 75%;
+        gap: 40px;
+    }
+    .information_box_type_two_big_line{
+        height: 177px;
+    }
+    .information_box_type_two_big_text_box p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+        /* information_box_type_two_big */
+ }

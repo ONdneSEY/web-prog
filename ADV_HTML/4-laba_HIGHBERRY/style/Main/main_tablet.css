@@ -1,0 +1,277 @@
+:root{
+    --main-fons: "Roboto", sans-serif;
+    --second-fons: "Roboto", sans-serif;
+
+    --text-color-dark-gray: #666769;
+    --text-color-light-green: #6AB354;
+    --text-color-dark-green: #3A7611;
+    --text-color-grey: #DDDEDF;
+    --text-color-light-gray: #EDECEC;
+    --text-color-white-gray: #F8F8F8;
+
+    --dg-color-dark-gray: #666769;
+    --dg-color-light-green: #6AB354;
+    --dg-color-dark-green: #3A7611;
+    --dg-color-grey: #DDDEDF;
+    --dg-color-light-gray: #EDECEC;
+    --dg-color-white-gray: #F8F8F8;
+
+    --border-color-information: #E3DED9;
+}
+
+@media screen and (min-width: 768px ) {
+    h1{
+        font-size: 48px;
+        font-weight: 400;
+    }
+    h2{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    h3{
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 35px;
+    }
+    p{
+        font-size: 16px;
+        font-weight: 300;
+    }
+    .p_10_mobile{
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+    .continent{
+        max-width: 768px;
+    }
+    .tablet_flex{
+        display: flex;
+    }
+    .tablet{
+        display: block;
+    }
+    .width_heder_footer{
+        width: 96%;
+    }
+    .width_content{
+        width: 96%;
+    }
+    .point{
+        padding: 6px;
+    }
+    .line{
+        width: 2PX;
+    }
+    .title_section{
+        font-size: 46px;
+        text-align: center;
+        color: var(--text-color-light-green);
+        padding-bottom: 30px;
+    }
+    .pading{
+        padding: 60px 0;
+    }
+            /* + + + MAIN + + + */
+        /*  + + + information_conteiner_big + + + */
+    .information_conteiner_big{
+        display: grid;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        gap: 58px;
+        grid-template-columns: 1fr 2.372fr;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid var(--dg-color-light-gray);
+    }
+    .information_conteiner_img{
+        width: 80%;
+    }
+    .information_conteiner_description{
+        gap: 0px;
+    }
+        /*  - - - information_conteiner_big - - - */
+
+        /* +++ retreat_columns_double +++ */
+    .retreat_columns_double{
+        display: grid;
+        gap: 31px;
+        grid-template-columns: 1fr 1fr;
+    }
+        /* --- retreat_columns_double --- */
+
+         /* + + + video_box + + + */
+    .video_box{
+        width: 100%;
+        margin: 35px 0;
+        height: 421px;
+    }
+    .video_box img{
+        width: 100%;
+        height: 100%;
+    }
+    .video_box video{
+        width: 100%;
+        height: 100%;
+    }
+    /* - - - video_box - - - */
+            /* - - - MAIN - - - */ 
+
+
+             /* growing */
+
+    /* double_column_conteiner */
+    .double_column_conteiner{
+        gap: 30px;
+    }
+    .double_column_element{
+        width: 100%;
+        height: 29.417ch;
+    }
+    .double_column_element_box{
+        gap: 35px;
+        grid-template-columns: 1fr 1fr;
+    }
+    .double_column_element_information_box{
+        height: calc(100% - 30px);
+        padding: 30px 25px 0;
+        text-align: left;
+    }
+    .double_column_element img{
+        width: 100%;
+        height: 100%;
+    }
+    .double_column_element_logo{
+        position: absolute;
+        top: -10%;
+        left: 44%;
+    }
+    .double_column_element_logo img{
+        height: 44.5px;
+        width: 44.5px;
+    }
+    .double_column_element_title{
+        text-align: center;
+        font-size: 20px;
+        line-height: 25.1px;
+    }
+    .double_column_element_line{
+        margin: 10px 0 20px 0;
+        width: 140px;
+        height: 1px;
+        background-color: var(--dg-color-light-green);
+    }
+
+    p.double_column_element_text{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .order_2{
+        order: 2;
+    }
+    .information_conteiner_growig{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 39px;
+    }
+    .point_conteiner{
+        bottom: 32%;
+    }
+    .carousels_two_bg{
+        height: 36.698ch;
+    }
+    .carousels_two_text_box{
+        padding: 2% 0;
+        bottom: 36.5%;
+    }
+    .carousels_two_text{
+        font-size: 20px;
+    }
+
+    .carousels_two_title_conteiner{
+        width: 80%;
+        margin: 0 auto;
+        justify-content: flex-start;
+    }
+    
+    .line_type_two{
+        width: 106px;
+    }
+    /* double_column_conteiner */
+    
+            /* growing */
+
+            /* Manufacturing */
+    /* information_container_type_medium */
+    .information_container_type_medium{
+        padding: 30px 40px 0;
+        align-items: start;
+        grid-template-columns: 1fr 2.5fr;
+        gap: 30px;
+        margin-bottom: 30px;
+        height: 36.847ch;
+    }
+    .information_container_type_medium_IQF{
+        width: 90.94%;
+        height: 45.31%;
+        margin-top: 50%;
+    }
+    .information_container_type_medium_STATIC{
+        width: 85.03%;
+        height: 41.39%;
+        margin-top: 50%;
+    }
+    .information_container_type_text_box{
+        display: grid;
+        justify-items: center;
+    }
+    .information_container_type_text_title{
+        font-size: 32px;
+        line-height: 30px;
+        color: var(--dg-color-light-green);
+    }
+    .information_container_type_text_line{
+        margin: 20px 0 20px 0;
+    }
+    .information_container_type_text{
+        font-size: 16px;
+        line-height: 25px;
+    }
+    /* information_container_type_medium */
+
+    /* information_container_type_medium_2 */
+    .information_container_type_medium_2{
+        gap: 30px;
+    }
+    .information_container_type_medium_2_title{
+        font-size: 46px;
+        line-height: 48px;
+    }
+    .information_container_type_medium_logo{
+        width: 56.86%;
+        padding-left: 25px;
+    }
+    .gap_for_road{
+        gap: 60px;
+    }
+    .double_column_conteiner{
+        position: relative;
+    }
+    .road{
+        position: absolute;
+        top: -0.9%;
+        left: 48.7%;
+        display: block;
+        width: 15px;
+        height: 101%;
+    }
+    .road img{
+        height: 100%;
+    }
+    /* information_container_type_medium_2 */
+            /* Manufacturing */
+
+}
+

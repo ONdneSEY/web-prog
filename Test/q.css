@@ -1,4 +1,30 @@
-.box{
-    width: 50%;
-    margin: 0 auto;
+:root{
+    --main-fons: "Roboto", sans-serif;
+    --second-fons: "Roboto", sans-serif;
+
+    --text-color-dark-gray: #666769;
+    --text-color-light-green: #6AB354;
+    --text-color-dark-green: #3A7611;
+    --text-color-grey: #DDDEDF;
+    --text-color-light-gray: #EDECEC;
+    --text-color-white-gray: #F8F8F8;
+
+    --dg-color-dark-gray: #666769;
+    --dg-color-light-green: #6AB354;
+    --dg-color-dark-green: #3A7611;
+    --dg-color-grey: #DDDEDF;
+    --dg-color-light-gray: #EDECEC;
+    --dg-color-white-gray: #F8F8F8;
+
+    --border-color-information: #E3DED9;
 }
+
+.uppercase{
+    text-transform: uppercase;
+}
+body{
+    width: 100%;
+    background-color: aqua;
+}
+
+

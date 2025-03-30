@@ -8,17 +8,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style/reset.css">
-    <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/tablet_768_810_1020-.css">
-    <link rel="stylesheet" href="style/PC_1440.css">
+   <link rel="stylesheet" href="style/reset.css">
+
+   <link rel="stylesheet" href="style/Main/main.css">
+   <link rel="stylesheet" href="style/Main/main_tablet.css">
+   <link rel="stylesheet" href="style/Main/main_PC.css">
+
+   <link rel="stylesheet" href="style/Header_Footer/header_footer.css">
+   <link rel="stylesheet" href="style/Header_Footer/header_footer_adaptation.css">
+
+   <link rel="stylesheet" href="style/General-elements/general-elements.css">
+   <link rel="stylesheet" href="style/General-elements/general-elements_adaptation.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>H I G H B E R R Y</title>
 </head>
 <body>
     <div class="continent margin_center">
-        <header class="margin_center">
-            <div class="menu_top width_content margin_center">
+        <header class="header_main margin_center">
+            <div class="menu_top width_heder_footer margin_center">
                 <img class="logo" src="img/logo/Group_white.png" alt="">
                 <div class="top_menu_list_product tablet_flex">
                     <p>КАТАЛОГ ПРОДУКЦІЇ</p>
@@ -35,15 +42,15 @@
                     <div class="menu_list_logo_line"></div>
                 </div>
             </div>
-            <div class="width_content margin_center tablet">
+            <div class="width_heder_footer margin_center tablet">
                 <img class="logo_big" src="img/logo/Group_white.png" alt="">
             </div>
-            <div class="width_content margin_center">
+            <div class="width_heder_footer margin_center">
                 <div class="heder-text text-box">
                     <p>ВИРОЩЕНО ТА ЗАМОРОЖЕНО В УКРАЇНІ</p>
                 </div>
             </div>
-            <div class="width_content margin_center tablet">
+            <div class="heder_button_bottom_box margin_center tablet">
                 <div class="heder_button_bottom"><img src="img/icon/Arrow 1.png" alt=""></div>
             </div>
         </header>
@@ -53,7 +60,7 @@
 
                 <!-- + + + Information Content + + + -->
                 <div class="information_content-box">
-                    <p class="information_title">МИ ПОРУЧ</p>
+                    <h1 class="information_title">МИ ПОРУЧ</h1>
                     
                     <div class="information_conteiner">
                         <div class="information_box">
@@ -101,189 +108,180 @@
                     <img src="img/imges/map.png" alt="">
                 </div>  
 
-                <div class="retreat_mobile grid_columns_double">
+                <div class="retreat_columns_double">
                     <div>
                         <p class="p_10_mobile"> Агровиробний комплекс «HIGHBERRY» задовільняє попит українського та європейського споживача свіжими й замороженими продуктами абсолютної якості за рахунок власного вирощування та власного виробництва</p></div>
                     <div>
                         <p class="p_10_mobile">Вигідне географічне розташування та близькість до європейського кордону дозволяють скоротити витрати й час при транспортуванні продукції до наших клієнтів в Україні та експорту до країн Європи</p>
                         <div class="learn_more">
-                            <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                            <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                            <img src="img/icon/Arrow.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="drop_down_list_conteiner_grid">
-                <div class="drop_down_list_img"></div>
+                <div class="drop_down_list_img cultivation"></div>
                 
                 <div class="drop_down_list_conteiner width_content margin_center">
-                    <p class="drop_down_list_text">FRESH</p>
+                    <h2>FRESH</h2>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">ПОЛУНИЦЯ</p>
+                        <h3 class="drop_down_list_title">ПОЛУНИЦЯ</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">МАЛИНА</p>
+                        <h3 class="drop_down_list_title">МАЛИНА</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">ОЖИНА</p>
+                        <h3 class="drop_down_list_title">ОЖИНА</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">ВИШНЯ</p>
+                        <h3 class="drop_down_list_title">ВИШНЯ</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">БРОКОЛІ</p>
+                        <h3 class="drop_down_list_title">БРОКОЛІ</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">ЦВІТНА КАПУСТА</p>
+                        <h3 class="drop_down_list_title">ЦВІТНА КАПУСТА</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">БРЮСЕЛЬСЬКА КАПУСТА</p>
+                        <h3 class="drop_down_list_title">БРЮСЕЛЬСЬКА КАПУСТА</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">ПЕРЕЦЬ</p>
+                        <h3 class="drop_down_list_title">ПЕРЕЦЬ</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">ТОМАТИ</p>
+                        <h3 class="drop_down_list_title">ТОМАТИ</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                     <div class="drop_down_list_content">
-                        <p class="drop_down_list_title">МОРКВА</p>
+                        <h3 class="drop_down_list_title">МОРКВА</h3>
                         <div class="drop_down_list_description_box">
-                            <p class="drop_down_list_description">Площа 52 га.</p>
-                            <p class="drop_down_list_description">Врожайність 1229т</p>
-                            <p class="drop_down_list_description">Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
-                            <p class="drop_down_list_description">Період збору врожаю: червень-липень</p>
+                            <p>Площа 52 га.</p>
+                            <p>Врожайність 1229т</p>
+                            <p>Сорт: Хоней, Занга-Зенгана, Флоренс, Румба</p>
+                            <p>Період збору врожаю: червень-липень</p>
                             <div class="learn_more">
-                                <a href="" class="learn_more_text"> Дізнайтеся більше →</a>
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
                             </div>
                         </div>
-                        <div class="drop_down_list_marker ">
-                            <div class="drop_down_list_point point"></div>
-                            <div class="drop_down_list_line"></div>
-                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
                     </div>
                 </div>
             </div>
             <div class="display_grid_gep width_content margin_center">
 
                 <div class="information_content-box">
-                    <p class="information_title">Вирощування</p>
+                    <h1 class="information_title">Вирощування</h1>
                     
                     <div class="information_conteiner">
                         <div class="information_box">
@@ -327,35 +325,37 @@
                     </div>
                 </div>
 
-                <div class="logistics_conteiner_grid">
-                    <div class="logistics_conteiner_content_logo_grid">
-                        <a href=""><img src="img/icon/Ananas.png" alt="" class="logistics_conteiner_content_logo_item"></a>
-                        <a href=""><img src="img/icon/grapes.png" alt="" class="logistics_conteiner_content_logo_item"></a>
-                        <a href=""><img src="img/icon/strawberry.png" alt="" class="logistics_conteiner_content_logo_item"></a>
-                        <a href=""><img src="img/icon/cherry.png" alt="" class="logistics_conteiner_content_logo_item"></a>
-                        <a href=""><img src="img/icon/watermelon.png" alt="" class="logistics_conteiner_content_logo_item"></a>
-                    </div>
-                    <div class="logistics_conteiner_content_map">
-                        <div class="logistics_informatiom">
-                            <p class="logistics_informatiom_title">ПОЛУНИЦЯ</p>
-                            <div class="logistics_informatiom_line"></div>
-                            <P>2 га</P>
+                <div class="logistics_conteiner">
+                    <div class="logistics_conteiner_grid">
+                        <div class="logistics_conteiner_content_logo_grid">
+                            <a href=""><img src="img/icon/Ananas.png" alt="" class="logistics_conteiner_content_logo_item"></a>
+                            <a href=""><img src="img/icon/grapes.png" alt="" class="logistics_conteiner_content_logo_item"></a>
+                            <a href=""><img src="img/icon/strawberry.png" alt="" class="logistics_conteiner_content_logo_item"></a>
+                            <a href=""><img src="img/icon/cherry.png" alt="" class="logistics_conteiner_content_logo_item"></a>
+                            <a href=""><img src="img/icon/watermelon.png" alt="" class="logistics_conteiner_content_logo_item"></a>
                         </div>
-
-                        <img src="img/icon/logistics_map.png" alt="">
-
-                        <div class="logistics_informatiom">
-                            <p class="logistics_informatiom_title">КАПУСТА КОЛЬОРОВА</p>
-                            <div class="logistics_informatiom_line"></div>
-                            <P >2 га</P>
+                        <div class="logistics_conteiner_content_map">
+                            <div class="logistics_informatiom">
+                                <p class="logistics_informatiom_title">ПОЛУНИЦЯ</p>
+                                <div class="logistics_informatiom_line"></div>
+                                <P>2 га</P>
+                            </div>
+    
+                            <img src="img/icon/logistics_map.png" alt="">
+    
+                            <div class="logistics_informatiom">
+                                <p class="logistics_informatiom_title">КАПУСТА КОЛЬОРОВА</p>
+                                <div class="logistics_informatiom_line"></div>
+                                <P >2 га</P>
+                            </div>
                         </div>
-                    </div>
-                    <div class="logistics_conteiner_content_logo_grid">
-                        <img src="img/icon/broccoli.png" alt="" class="logistics_conteiner_content_logo_item">
-                        <img src="img/icon/cabbage.png" alt="" class="logistics_conteiner_content_logo_item">
-                        <img src="img/icon/silhouette.png" alt="" class="logistics_conteiner_content_logo_item">
-                        <img src="img/icon/pepper.png" alt="" class="logistics_conteiner_content_logo_item">
-                        <img src="img/icon/carrot.png" alt="" class="logistics_conteiner_content_logo_item">
+                        <div class="logistics_conteiner_content_logo_grid">
+                            <img src="img/icon/broccoli.png" alt="" class="logistics_conteiner_content_logo_item">
+                            <img src="img/icon/cabbage.png" alt="" class="logistics_conteiner_content_logo_item">
+                            <img src="img/icon/silhouette.png" alt="" class="logistics_conteiner_content_logo_item">
+                            <img src="img/icon/pepper.png" alt="" class="logistics_conteiner_content_logo_item">
+                            <img src="img/icon/carrot.png" alt="" class="logistics_conteiner_content_logo_item">
+                        </div>
                     </div>
                 </div>
 
@@ -407,70 +407,354 @@
                 </div>
             </div>
 
-            <div class="width_content margin_center">
-                <div class="information_conteiner_big">
-                    <h2 >ВИРОБНИЦТВО</h2>
-                    <img class="information_conteiner_img" src="img/imges/manufacturing.png" alt="">
+            <div class="display_grid_gep width_content margin_center">
+                <div class="information_conteiner_big_container">
+                        <h1 >ВИРОБНИЦТВО</h1>
+                    
+                     <div class="information_conteiner_big">
+                        <img class="information_conteiner_img" src="img/imges/manufacturing.png" alt="">
 
-                    <div class="information_conteiner_description">
-                        <p class="p_10_mobile">Агровиробничий комплекс “HIGHBERRY” постійно вдосконалює технологію вирощування культур, отримуючи максимальний об'єм врожаю з одного гектара.
-                            Єдиний агрохімічний аналіз у кожному кілограмі всієї партії гарантує продукція, зібрана на наших полях. </p>
-                        <p class="p_10_mobile">Особливу увагу приділяємо раціональному використанню та контролю за нормами внесення добрив і засобів захисту рослин</p>
-                        <div class="learn_more">
-                            <a href="" class="learn_more_text"> ДІЗНАТИСЯ  БІЛЬШЕ →</a>
+                        <div class="information_conteiner_description">
+                            <p class="p_10_mobile">Агровиробничий комплекс “HIGHBERRY” має власний завод з переробки та заморожування ягід, фруктів, овочів, різноманітних фруктово-овочевих сумішей та ін. в промислових масштабах.</p>
+                            <p class="p_10_mobile">Замороження відбувається за технологією IQF, завдяки сучасному високотехнологічному оснащенню, що дозволяє виготовляти біля 60 т продукції на добу</p>
                         </div>
-                    </div>
+                     </div>
                 </div>
                 <!-- + + + Information Content + + + -->
-                <div class="information_content-box">
-                    <p class="information_title">МИ ПОРУЧ</p>
-                    
                     <div class="information_conteiner">
                         <div class="information_box">
-                            <img class="information_logo" src="img/logo/11.png" alt="">
+                            <img class="information_logo" src="img/logo/basket.png" alt="">
                             <div class="information_text_box">
                                 <div class="information_top_text">
-                                    <p class="information_big_text">11</p>
-                                    <p class="information_small_text">років</p>
+                                    <p class="information_big_text">≈2500</p>
+                                    <p class="information_small_text">тон на рік</p>
                                 </div>
-                                <p class="information_mid_text">НА РИНКУ</p>
+                                <p class="information_mid_text">ЗАМОРОЖУЄМО</p>
                             </div>
                         </div>
                         <div class="information_box">
-                            <img class="information_logo" src="img/logo/Group 680.png" alt="">
+                            <img class="information_logo" src="img/logo/chair.png" alt="">
     
                             <div class="information_text_box">
                                 <div class="information_top_text">
-                                    <p class="information_big_text">417+</p>
-                                    <p class="information_small_text">га</p>
+                                    <p class="information_big_text">≈60</p>
+                                    <p class="information_small_text">тон на день</p>
                                 </div>
                                 <div class="information_botton_text">
-                                    <p class="information_mid_text">СІЛЬГОСПЗЕМЕЛЬ</p>
+                                    <p class="information_mid_text">ПОТУЖНІСТЬ ВИРОБНИЦТВА</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="information_box">
-                            <img class="information_logo" src="img/logo/Haus.png" alt="">
+                            <img class="information_logo" src="img/logo/planet.png" alt="">
     
                             <div class="information_text_box">
                                 <div class="information_top_text">
-                                    <p class="information_big_text">2200</p>
-                                    <p class="information_small_text">м<sup>2</sup></p>
+                                    <p class="information_big_text">5</p>
+                                    <p class="information_small_text">країн</p>
                                 </div>
                                 <div class="information_botton_text">
-                                    <p class="information_mid_text">ЗАВОД ІЗ ЗАМОРОЗКИ ТА ПЕРЕРОБКИ</p>
+                                    <p class="information_mid_text">ЕКСПОРТ</p>
                                 </div>
                             </div>
                         </div> 
                     </div>
-                </div>
                 <!-- - - - Information Content - - - -->
-            </div>
-            
-            <div class="title_page_center_box">
                 <h2 class="title_page_center">ТЕХНОЛОГІЧНІ ПРОЦЕСИ ЗАМОРОЗКИ</h2>
             </div>
+            
+
+
+            <div class="drop_down_list_conteiner_grid">
+                <div class="drop_down_list_img tachnological"></div>
+                
+                <div class="drop_down_list_conteiner width_content margin_center">
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">Миття та сушка</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+                    
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">БЛАНШУВАННЯ</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">очищення</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">Видалення кісточки</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">або серцевини</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">Нарізка</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">Глазурування</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">Шнекування</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">Калібрування</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">Ручна інспекція</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">Фасування</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+
+                    <div class="drop_down_list_content">
+                        <h3 class="drop_down_list_title">ЗАМОРОЖУВАННЯ</h3>
+                        <div class="drop_down_list_description_box">
+                            <p>Процес переробки ягід, фруктів та овочів завжди починається з миття та сушіння продукції.В залежності від виду овочів та фруктів для мийки ми використовуємо машини м’якого або жорсткого миття. </p>
+                            <div class="learn_more">
+                                <a href="" class="learn_more_text"> Дізнайтеся більше </a>
+                                <img src="img/icon/Arrow.png" alt="">
+                            </div>
+                        </div>
+                        <div class="drop_down_list_point point"></div>
+                        <div class="drop_down_list_line line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="video_box">
+                <img src="img/imges/VIDEO 1.png" alt="">
+            </div>
         </main>
+
+
+        <footer>
+            <dix class="footer_box_shedow">
+                <!-- open Footer Box-->
+                <div class="footer_conteiner">
+                    <div class="footer_input_box">
+                        <input type="text" class="footer_input" placeholder="Підприємство*">
+                        <input type="text" class="footer_input" placeholder="ПІБ*">
+                        <input type="text" class="footer_input" placeholder="Телефон*">
+                        <input type="text" class="footer_input" placeholder="E-mail*">
+                        <div class="footer_check_box">
+                            <input type="checkbox" class="checkbox">
+                            <div class="footer_check_text_box">
+                                <p class="footer_check_text">* пункт обовязковий для заповнення</p>
+                                <p class="footer_check_text">Даю згоду на обробку, зберігання та використання основних даних</p>
+                            </div>
+                        </div>
+                        <div class="footer_input_button uppercase">надіслати заявку</div>
+                    </div>
+                    <div class="footer_logo_box">
+                        <img src="img/logo/Group_white.png" alt="" class="footer_logo_img">
+                        <p class="footer_logo_mane uppercase mobbile_tablet">тов «ХАЙБЕРРІ»</p>
+                        <p class="footer_logo_text mobbile_tablet">c.Старий Чорторийськ, вул.Сокола, 101-А <br> Волинська область, Маневецький район Україна, 44636</p>
+                    </div>
+                    <div class="footer_contact_box mobbile_tablet">
+                        <div class="footer_contact_element_number">
+                            <div class="footer_contact_element">
+                                <a href="" class="footer_contact">+380 67 560 3808</a>
+                                <a href="" class="footer_contact">+380 96 400 5555</a>
+                            </div>
+                            <div class="footer_contact_element">
+                                <a href="" class="footer_contact">для України</a>
+                                <a href="" class="footer_contact">для інших крахн</a>
+                            </div>
+                        </div>
+                        <div class="footer_contact_element ">
+                            <a href="" class="footer_contact">high.berry@ukr.net</a>
+                        </div>
+                    </div>
+                    <div class="footer_list_box mobbile_tablet">
+                        <div class="footer_contact_element">
+                            <a href="" class="footer_contact uppercase">компанія</a>
+                            <a href="" class="footer_contact uppercase">вирощування</a>
+                        </div>
+                        <div class="footer_contact_element">
+                            <a href="" class="footer_contact uppercase">виробницство</a>
+                            <a href="" class="footer_contact uppercase">продукція</a>
+                        </div>
+                        <div class="footer_contact_element">
+                            <a href="" class="footer_contact uppercase">новини</a>
+                            <a href="" class="footer_contact uppercase">контакти</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer_catalog_box mobbile_tablet">
+                    <a href="" class="uppercase">каталог продукції</a>
+                    <img src="img/icon/PDF.png" alt="">
+                </div>
+
+                <div class="footer_box_pc">
+
+                    <p class="footer_logo_mane uppercase PC">тов «ХАЙБЕРРІ»</p>
+
+                    <div class="footer_pc">
+                        <div class="footer_contact_element">
+                            <p class="footer_logo_text ">c.Старий Чорторийськ, вул.Сокола, 101-А <br> Волинська область, Маневецький район <br> Україна, 44636</p> 
+                        </div>
+
+                        <div class="footer_list_box ">
+                            <div class="footer_contact_element">
+                                <a href="" class="footer_contact uppercase">компанія</a>
+                                <a href="" class="footer_contact uppercase">вирощування</a>
+                            </div>
+                            <div class="footer_contact_element">
+                                <a href="" class="footer_contact uppercase">виробницство</a>
+                                <a href="" class="footer_contact uppercase">продукція</a>
+                            </div>
+                            <div class="footer_contact_element">
+                                <a href="" class="footer_contact uppercase">новини</a>
+                                <a href="" class="footer_contact uppercase">контакти</a>
+                            </div>
+                        </div>
+
+                        <div class="footer_contact_box ">
+                            <div class="footer_contact_element_number">
+                                <div class="footer_contact_element">
+                                    <a href="" class="footer_contact">+380 67 560 3808</a>
+                                    <a href="" class="footer_contact">+380 96 400 5555</a>
+                                </div>
+                                <div class="footer_contact_element">
+                                    <a href="" class="footer_contact">для України</a>
+                                    <a href="" class="footer_contact">для інших крахн</a>
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+    
+                    <div class="footer_list_social_networks_box">
+                        <div class="footer_list_social_networks">
+                            <div class="footer_catalog_box">
+                                <a href="" class="uppercase">каталог продукції</a>
+                                <img src="img/icon/PDF.png" alt="">
+                            </div>
+                            <div class="footer_social_networks_box pc">
+                                <a href=""><img src="img/icon/Footer_In.png" alt=""></a>
+                                <a href=""><img src="img/icon/Footer_Facebuk.png" alt=""></a>
+                                <a href=""><img src="img/icon/Footer_Instagram.png" alt=""></a>
+                                <a href=""><img src="img/icon/Footer_YouTube.png" alt=""></a>
+                                <a href=""><img src="img/icon/Footer_Tik_tok.png" alt=""></a>
+                                <a href="">high.berry@ukr.net</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- close Footer Box-->
+                <div class="botton_footer_box">
+                    <a href="" class="uppercase">HIGHBERRY.COMㅤ2022ㅤ©</a>
+                    <a href="">Політика конфіденційності</a> 
+                </div>
+            </dix>
+        </footer>
     </div>
 </html>
