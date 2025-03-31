@@ -266,8 +266,100 @@
         font-size: 12px;
     }
         /* information_box_type_two_big */
+        /* information_type_one_small_conteiner */
+    .information_type_one_small_conteiner{
+        grid-template-columns: 1fr 1fr;
+        gap: 50px 40px;
+    }
+    .information_type_one_small_conteiner_icon{
+        top: -25px;
+    }
+    .information_type_one_small_conteiner_icon img{
+        width: 66%;
+    }
+    .information_type_one_small_conteiner_title{
+        font-size: 19px;
+        line-height: 26.4px;
+    }
+    .information_type_one_small_conteiner_text{
+        font-size: 12px;
+        line-height: 19.8px;
+    }
 
-    
+
+    .form_for_joining_conteiner_box{
+        padding: 10% 12% 10% 5%;
+    }
+    .form_for_joining_conteiner{
+        width: 100%;
+    }
+    .form_for_joining{
+        gap: 15px;
+    }
+    .form_for_joining_box{
+        display: grid;
+        grid-template-columns: 1.3fr 1fr 1.7fr;
+        gap: 40px;
+        align-items: center;
+    }
+    .form_for_joining_logo{
+        width: 93.27%;
+    }
+    .form_for_joining_line_vertical{
+        height: 144.74px;
+        width: 1px;
+        background-color: var(--dg-color-light-green);
+    }
+    .form_for_joining_line{
+        width: 144.74px;
+        height: 1px;
+    }
+    .form_for_joining_INPUT{
+        width: 87.4%;
+        padding: 0.7% 3%;
+    }
+    .attach{
+        display: flex;
+        gap: 5px;
+
+        font-size: 10px;
+        font-weight: 400;
+    }
+    .buton_3{
+        padding: 0.3% 5.18%;
+    }
+
+    .contact_conteiner{
+        padding-top: 30px;
+        gap: 15px;
+    }
+    .contact_conteiner_box{
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 40px;
+    }
+    p.contact_text{
+        font-size: 12px;
+        line-height: 16.4px;
+    }
+
+        /* information_type_one_small_conteiner */
+        
+        /* open Top main */
+    .top_main{
+        width: 100%;
+        height: 26.71ch;
+    }
+    .top_main_title{
+        top: 40%;
+    }
+    .top_main_title p{
+        font-size: 35px;
+    }  
+    .top_main_title_line{
+        width: 400px;
+    }
+        /* close Top main */
  }
  
  @media screen and (min-width: 1320px){
@@ -419,4 +511,73 @@
         line-height: 24px;
     }
         /* information_box_type_two_big */
+    
+        /* information_type_one_small_conteiner */
+    .information_type_one_small_conteiner{
+        gap: 80px 50px;
+    }
+    .information_type_one_small_element{
+        padding: 12% 8% 10%;
+    }
+    
+    .information_type_one_small_conteiner_icon{
+        top: -35px;
+    }
+    .information_type_one_small_conteiner_icon img{
+        width: 100%;
+    }
+    .information_type_one_small_conteiner_title{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .information_type_one_small_conteiner_text{
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .form_for_joining_conteiner_box{
+        padding: 5% 12% 4% 5%;
+    }
+    .form_for_joining_logo{
+        width: 85.34%;
+    }
+    .form_for_joining_line_vertical{
+        height: 220px;
+    }
+    .form_for_joining_line{
+        width: 220px;;
+    }
+    .form_for_joining_INPUT{
+        width: 86%;
+        padding: 1.4% 3%;
+    }
+    .contact_conteiner{
+        padding-top: 60px;
+        gap: 20px;
+    }
+    .contact_conteiner_box{
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 40px;
+    }
+    p.contact_text{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    /* information_type_one_small_conteiner */
+
+        /* open Top main */
+    .top_main{
+        height: 50.18ch;
+    }
+    .top_main_title{
+        top: 40%;
+    }
+    .top_main_title p{
+        font-size: 48px;
+    }  
+    .top_main_title_line{
+        width: 570px;
+    }
+        /* close Top main */
  }

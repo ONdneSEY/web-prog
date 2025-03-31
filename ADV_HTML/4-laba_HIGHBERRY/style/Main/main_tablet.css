@@ -48,6 +48,9 @@
     .tablet_flex{
         display: flex;
     }
+    .mobbile{
+        display: none;
+    }
     .tablet{
         display: block;
     }
@@ -73,6 +76,9 @@
         padding: 60px 0;
     }
             /* + + + MAIN + + + */
+    .main_pages_type_one{
+        padding-bottom: 5%;
+    }
         /*  + + + information_conteiner_big + + + */
     .information_conteiner_big{
         display: grid;
@@ -273,5 +279,56 @@
     /* information_container_type_medium_2 */
             /* Manufacturing */
 
+            
+            /* open News */
+    .news_title_box{
+        gap: 10px;
+    }
+    .news_title_img{
+        background-image: url(/ADV_HTML/4-laba_HIGHBERRY/img/imges/Arrow\ 8.png);
+        background-size: 100% 100%;
+        width: 34.12px;
+        height: 6px;
+    }
+    .news_title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .news_title_text{
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .news_title_data{
+        font-size: 16px;
+        line-height: 29px;
+    }
+    .news_content_text{
+        position: relative;
+    }
+    .news_content_text p{
+        font-size: 12px;
+        line-height: 21.8px;
+        float: left;
+    }
+    .news_content_text li{
+        font-size: 12px;
+        line-height: 21.8px;
+        margin-left: 2%;
+    }
+    .news_content_list{
+        float: left;
+    }
+    .news_img_box{
+        position: absolute;
+        top: 45%;
+        right: 0;
+    }
+    .news_img{
+        margin: 0;
+        width: 380.9px;
+        height: 267.18px;
+    }
+            /* close News */
 }
 

@@ -395,9 +395,6 @@ footer{
     justify-content: space-between;
     gap: 20px;
 }
-.footer_logo_text{
-    margin-right: 40px;
-}
 .footer_contact_element_number{
     display: flex;
     gap: 15px;
@@ -417,7 +414,6 @@ footer{
 
 .footer_catalog_box{
     display: flex;
-    align-items: center;
     justify-content: flex-end;
     gap: 5px;
     font-size: 10px;

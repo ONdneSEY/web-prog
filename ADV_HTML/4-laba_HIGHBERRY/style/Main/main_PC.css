@@ -199,5 +199,45 @@
 
     /* information_container_type_medium_2 */
             /* growing */
-    
+    /* open News */
+    .news_title_box{
+        gap: 20px;
+    }
+    .news_title_img{
+        width: 47px;
+    }
+    .news_title{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .news_title_text{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .news_title_data{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .news_content_text p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .news_content_text li{
+        font-size: 16px;
+        line-height: 30px;
+        margin-left: 1%;
+    }
+
+    .news_img_box{
+        position: absolute;
+        top: 45%;
+        right: 0;
+    }
+    .news_img{
+        margin: 0;
+        width: 524.62px;
+        height: 368px;
+    }
+            /* close News */
 }
