@@ -58,7 +58,6 @@ body{
 .continent{
     font-family: var(--main-fons);
     width: 100%;
-    max-width: 320px;
     background: var(--dg-color-white-gray);
 }
 .margin_center{

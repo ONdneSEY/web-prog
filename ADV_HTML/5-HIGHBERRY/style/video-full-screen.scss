@@ -1,0 +1,67 @@
+.layout-wrapper{
+    
+
+    .video-full-screen{
+        background-color: #000;
+        position: relative;
+
+        .video-wrap{
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+
+            .content-wrap{
+                position: absolute;
+                bottom: 10%;
+                left: 5%;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                gap: 2rem;
+
+                .logo{
+                    display: none;
+                    max-width: 15rem;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                h1{
+                    font-size: 2rem;
+                    font-weight: 300;
+                    max-width: 15rem;
+                    color: #fff;
+                }
+
+                @media screen and (min-width: 768px) {
+                    &{
+                        bottom: 18%;
+                        left: 5%; 
+                    }
+                    
+                    .logo{
+                        display: block;
+                    }
+    
+                    h1{
+                        font-size: 3.5rem;
+                        line-height: 4.4rem;
+                        max-width: 26.1rem;
+                    }
+                }
+
+                @media screen and (min-width: 1024px) {
+                    &{
+                        bottom: 18%;
+                        left: 18%; 
+                    }
+                    .logo{
+                        max-width: 16.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

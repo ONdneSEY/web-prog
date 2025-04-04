@@ -680,7 +680,7 @@
         padding-top: 20px;
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: center;
         gap: 10px;
     }
     .contact_conteiner_box{
@@ -707,7 +707,7 @@
         text-align: center;
         background-color: #000000;
     }
-    .box_shadow{
+    .box_shadow_2{
         width: 100%;
         height: 100%;
         position: absolute;

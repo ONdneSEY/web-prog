@@ -221,6 +221,32 @@
         width: 5.9%;
     }
         /* type_of_information_box_small_type_two */
+
+        /* information_box_type_three_big */
+    .information_box_type_three_big_box{
+        grid-template-columns: 1fr 1fr;
+    }
+    .information_box_type_three_big_img{
+        height: 309.98px;
+    }
+    .information_box_type_three_big_logo_box{
+        top: 290px;
+        left: 25px;
+    }
+    .information_box_type_three_big_line{
+        width: 146px;
+    }
+    .information_box_type_three_big_title{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    .information_box_type_three_big_text{
+        font-size: 12px;
+        line-height: 20px;
+        margin-bottom: 1%;
+    }
+        /* information_box_type_three_big */
+
         /* information_box_type_three_small */
     .information_box_type_three_small{
         padding: 4% 8%;
@@ -330,6 +356,7 @@
     }
 
     .contact_conteiner{
+        align-items: flex-end;
         padding-top: 30px;
         gap: 15px;
     }
@@ -455,6 +482,7 @@
         /* information_box_type_three */
 
         /* information_box_type_three_small */
+    
     .information_box_type_three_small{
         padding: 3% 7%;
     }
@@ -463,6 +491,42 @@
         line-height: 25px;
     }
         /* information_box_type_three_small */
+
+        /* information_box_type_three_big */
+    .information_box_type_three_big_box{
+        gap: 60px;
+    }
+    .information_box_type_three_big_img{
+        height: 455px;
+    }
+    .information_box_type_three_big_text_box{
+        padding: 8%;
+    }
+    .information_box_type_three_big_logo_box{
+        top: 420px;
+        left: 35px;
+    }
+    .information_box_type_three_big_logo{
+        width: 70px;
+    }
+    .information_box_type_three_big_line{
+        margin-top: 2%;
+        width: 220px;
+    }
+    .information_box_type_three_big_title{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .information_box_type_three_big_text{
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 3%;
+    }
+    .learn_more{
+        padding-top: 10px;
+        justify-content: center;
+    }
+        /* information_box_type_three_big */
 
     /* type_of_information_box_small_type_two */
     .type_of_information_box_small_type_two_box{
@@ -552,6 +616,7 @@
         padding: 1.4% 3%;
     }
     .contact_conteiner{
+
         padding-top: 60px;
         gap: 20px;
     }

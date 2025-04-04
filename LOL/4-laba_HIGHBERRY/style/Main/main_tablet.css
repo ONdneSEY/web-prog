@@ -43,7 +43,6 @@
         font-weight: 300;
     }
     .continent{
-        max-width: 768px;
     }
     .tablet_flex{
         display: flex;

@@ -15,7 +15,6 @@
     .continent{
         font-family: var(--main-fons);
         width: 100%;
-        max-width: 1440px;
         background: var(--dg-color-white-gray);
     }
     .width_heder_footer{
