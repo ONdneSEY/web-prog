@@ -1,4 +1,4 @@
-const styleHeader = document.querySelector('.style-header');
+const styleHeader = document.querySelector(".style-header");
 const mobileBurger = document.querySelector(".mobile-burger");
 const menuWrapper = document.querySelector(".menu-wrapper");
 const menuItem = document.querySelectorAll('.menu-item');
@@ -38,4 +38,3 @@ const removeAnimationClass = (item) =>{
         m.classList.remove('menuItemsAnima');
     })
 }
-

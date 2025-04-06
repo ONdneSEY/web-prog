@@ -269,10 +269,7 @@ $mediaTabletMax: 768px;
         position: fixed;
         inset: 0px;
         z-index: 1;
-        transition-duration: 0.5s;
-        transition-timing-function: ease;
-        transition-delay: 0s;
-        transition-property: background;
-        background: rgba(0, 0, 0, 0.6);
+        background-color: #00000060;
+        transition: background-color 0.5s ease;
     }
 }

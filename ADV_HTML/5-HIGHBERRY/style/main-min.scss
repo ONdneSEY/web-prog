@@ -35,39 +35,54 @@ a{
 .flex{
     display: flex;
 }
+
 .grid{
     display: grid;
 }
+
 .upertext{
     text-transform: uppercase;
 }
+
 .bg-col-page{
     background-color: var(--dg-color-white);
 }
 
 .top-margin{
-    margin: 40px 0 0 0;
+    margin: 40px 0 0;
 }
+.top-margin-small{
+    margin: 20px 0 0;
+}
+
 .mar-auuto{
     margin-left: auto;
     margin-right: auto;
 }
 
+sup{
+    font-size: 0.6rem;
+    vertical-align: super;
+}
+
 h1{
     font-size: 28px;
 }
+
 h2{
     font-size: 24px;
 }
+
 h3{
     font-size: 20px;
 }
+
 @media screen and (min-width: 768px) {
     h1{
         font-size: 48px;
     }
     h2{
-        font-size: 46px;
+        font-size: 32px;
     }
     h3{
         font-size: 32px;
@@ -118,7 +133,6 @@ h3{
 
 
 
-
 .con-max-width{
     width: 100%;
     max-width: 940px;
@@ -131,11 +145,11 @@ h3{
     }
 
     .conteiner-wraper{
-        margin-top: 30px;
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 1.5rem;
 
         .box-type-one{
             display: flex;
@@ -324,34 +338,239 @@ h3{
 
 .carousel-conte{
     display: grid;
-    width: 100%;
 
-    .carousel-element{
-        height: 200px;
-        position: relative;
+    .img-cont{
+        height: 200px; 
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        transition: background-image 0.4s cubic-bezier(0.16, 0.19, 0.43, 0.81);
+    }
 
-        .img-cont{
-            width: 100%;
-            
-            img{
-                width: 100%;
-                
-            }
+    .menu{
+        padding: 20px;
+        background-color: var(--dg-color-light-gray);
+
+        h2{
+            color: var(--text-color-light-green);
         }
 
-        .menu{
-            width: 100%;
-            h2{
+        .carousel-ul{
+            margin-top: 15px;
 
-            }
+            .carousel-item{
+                list-style-type: none;
+                margin: 0 0 10px 0;
+                padding: 0 0 0 25px;
+                font-size: 20px;
+                font-weight: 300;
+                position: relative;
 
-            .menu-ul{
-                .menu-item{
-                    .drop-li-icon{
-                        
+                .carousel-title{
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+                
+                .marcer-cont{
+                    height: 100%;
+                    position: absolute;
+                    top: 5px;
+                    left: 0px;
 
+                    .point{
+                        padding: 4px;
+                        border-radius: 50%;
+                        border: 1px solid var(--dg-color-light-green);
+                    }
+                    .line{
+                        position: absolute;
+                        top: 9px;
+                        left: 3.5px;
+                        height: 0;
+                        width: 2px;
+                        background-color: var(--dg-color-light-green);
+                        transition: 1s;
                     }
                 }
+
+                .drop-menu{
+                    margin-top: 5px;
+                    display: none;
+
+                    p{
+                        font-size: 10px;
+                        line-height: 16px;
+                        font-weight: 300;
+                    }
+                }
+
+                &.open{
+                    .marcer-cont{
+                        .point{
+                            background-color: var(--dg-color-light-green);
+                        }
+                        .line{
+                            height: calc(100% - 9px);
+                        }
+                    }
+                    .drop-menu{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        &{
+            grid-template-columns: 1fr 1fr;
+
+            .img-cont{
+                height: auto;
+            }
+            
+            .menu{
+                padding: 30px;
+
+                .carousel-ul{
+                    margin-top: 20px;
+
+                    .carousel-item{
+                        margin: 0 0 15px 0;
+
+                        .marcer-cont{
+                            
+                            .point{
+                                padding: 5.5px;
+                            }
+
+                            .line{
+                                top: 12px;
+                                left: 5px;
+                            }
+                        }
+
+                        .drop-menu{
+                            p{
+                                font-size: 12px;
+                                line-height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        &{
+            .menu{
+                padding: 50px 60px;
+
+                .carousel-ul{
+                    margin-top: 20px;
+
+                    .carousel-item{
+                        margin: 0 0 20px 0;
+                        padding: 0 0 0 55px;
+
+                        .carousel-title{
+                            font-size: 28px;
+                        }
+
+                        .marcer-cont{
+                            .point{
+                                padding: 8px;
+                            }
+
+                            .line{
+                                top: 18px;
+                                left: 8px;
+                            }
+                        }
+
+                        .drop-menu{
+                            margin-top: 10px;
+
+                            p{
+                                font-size: 16px;
+                                line-height: 25px;
+                                margin-bottom: 5px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.products-map-cont{
+    display: grid;
+    gap: 50px;
+
+    .map{
+        height: 153px;
+        width: 100%;
+        background-image: url(/ADV_HTML/5-HIGHBERRY/img/image/map-products.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+
+    .products-icon{
+        display: grid;
+        grid-template-columns: repeat(5, 1f);
+        justify-content: space-around;
+
+        .icon{
+            height: 2rem;
+
+            .icon1{
+                width: 100%;
+                height: 100%;
+                background-image: url(/ADV_HTML/5-HIGHBERRY/img/icon/pineapple.png);
+                background-size: contain;
+                background-repeat: no-repeat;
+                
+            }
+
+            .icon2{
+                
+            }
+
+            .icon3{
+                
+            }
+
+            .icon4{
+                
+            }
+
+            .icon5{
+                
+            }
+
+            .icon6{
+                
+            }
+
+            .icon7{
+                
+            }
+
+            .icon8{
+                
+            }
+
+            .icon9{
+                
+            }
+            
+            .icon10{
+                
             }
         }
     }
