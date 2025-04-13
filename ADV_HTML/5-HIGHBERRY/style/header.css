@@ -7,7 +7,7 @@
   background-color: #fff;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  z-index: 3;
+  z-index: 4;
 }
 .style-header.home-first {
   position: fixed !important;
@@ -279,10 +279,10 @@
   position: relative;
   -webkit-transform: translateX(calc(100% + 30px));
           transform: translateX(calc(100% + 30px));
-  -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.27, 0.59, 0.53, 0.88);
-  transition: -webkit-transform 0.5s cubic-bezier(0.27, 0.59, 0.53, 0.88);
-  transition: transform 0.5s cubic-bezier(0.27, 0.59, 0.53, 0.88);
-  transition: transform 0.5s cubic-bezier(0.27, 0.59, 0.53, 0.88), -webkit-transform 0.5s cubic-bezier(0.27, 0.59, 0.53, 0.88);
+  -webkit-transition: -webkit-transform 0.6s cubic-bezier(0.27, 0.59, 0.53, 0.88);
+  transition: -webkit-transform 0.6s cubic-bezier(0.27, 0.59, 0.53, 0.88);
+  transition: transform 0.6s cubic-bezier(0.27, 0.59, 0.53, 0.88);
+  transition: transform 0.6s cubic-bezier(0.27, 0.59, 0.53, 0.88), -webkit-transform 0.6s cubic-bezier(0.27, 0.59, 0.53, 0.88);
 }
 .style-header .header-melu-wrap .menu-wrapper .menu .menu-ul .menu-item.menuItemsAnima {
   -webkit-transform: translateX(0);

@@ -30,7 +30,7 @@ const animateItemsSequentially = (items) => {
     items.forEach((item, index) => {
       animationTimeout = setTimeout(() => {
         item.classList.add('menuItemsAnima');
-      }, index * 100);
+      }, index * 150);
     });
   };
 

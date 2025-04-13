@@ -126,7 +126,7 @@ h3 {
     font-size: 48px;
   }
   h2 {
-    font-size: 32px;
+    font-size: 40px;
   }
   h3 {
     font-size: 32px;
@@ -137,7 +137,7 @@ h3 {
     font-size: 48px;
   }
   h2 {
-    font-size: 46px;
+    font-size: 48px;
   }
   h3 {
     font-size: 32px;
@@ -988,7 +988,7 @@ h3 {
   .botto-video {
     max-width: 300px;
     gap: 30px;
-    padding: 20px 0;
+    padding: 10px 0;
   }
   .botto-video img {
     max-width: 40px;
@@ -1000,6 +1000,7 @@ h3 {
 @media screen and (min-width: 1024px) {
   .botto-video {
     max-width: 450px;
+    padding: 20px 0;
   }
   .botto-video img {
     max-width: 40px;

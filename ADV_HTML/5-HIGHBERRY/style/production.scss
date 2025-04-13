@@ -113,10 +113,6 @@
             display: none;
             height: calc(100% + 20px);
             padding: 40px 5px;
-            border-left: 2px solid var(--dg-color-light-green);
-            border-right: 2px solid var(--dg-color-light-green);
-
-            background-image: url(/ADV_HTML/);
         }
 
         .two-columns-box-element{
@@ -148,6 +144,10 @@
     
             .wrout{
                 display: block;
+                background-image: url(/ADV_HTML/5-HIGHBERRY/img/icon/wrout-2.png);
+                background-size: 100%;
+                width: 27px;
+                background-repeat: repeat-y;
             }
     
             .two-columns-box-element{
@@ -160,7 +160,7 @@
         }
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 1024px) {
         
         .title{
     
@@ -176,9 +176,9 @@
     
             .wrout{
                 display: block;
-                top: -30px;
-                height: calc(100% + 30px);
-
+                top: -20px;
+                height: calc(100% + 20px);
+                width: 33px;
             }
     
             .two-columns-box-element{
