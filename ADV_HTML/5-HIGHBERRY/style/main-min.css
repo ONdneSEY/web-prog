@@ -51,11 +51,6 @@ a {
   background-color: var(--dg-color-white);
 }
 
-.box-shedow {
-  -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.062745098);
-          box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.062745098);
-}
-
 .bg-white {
   background-color: #fff;
   padding: 20px 0;
@@ -386,31 +381,32 @@ h3 {
 .carousel-conte .menu .carousel-ul {
   margin-top: 15px;
 }
-.carousel-conte .menu .carousel-ul .carousel-item {
+.carousel-conte .menu .carousel-ul .carousel-item, .carousel-conte .menu .carousel-ul .carousel-item2 {
   list-style-type: none;
   margin: 0 0 10px 0;
   padding: 0 0 0 25px;
   font-size: 20px;
   font-weight: 300;
   position: relative;
+  background-color: var(--dg-color-light-gray);
   z-index: 1;
 }
-.carousel-conte .menu .carousel-ul .carousel-item .carousel-title {
+.carousel-conte .menu .carousel-ul .carousel-item .carousel-title, .carousel-conte .menu .carousel-ul .carousel-item .carousel-title2, .carousel-conte .menu .carousel-ul .carousel-item2 .carousel-title, .carousel-conte .menu .carousel-ul .carousel-item2 .carousel-title2 {
   font-size: 20px;
   font-weight: 300;
 }
-.carousel-conte .menu .carousel-ul .carousel-item .marcer-cont {
+.carousel-conte .menu .carousel-ul .carousel-item .marcer-cont, .carousel-conte .menu .carousel-ul .carousel-item2 .marcer-cont {
   height: 100%;
   position: absolute;
   top: 5px;
   left: 0px;
 }
-.carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .point {
+.carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .point, .carousel-conte .menu .carousel-ul .carousel-item2 .marcer-cont .point {
   padding: 4px;
   border-radius: 50%;
   border: 1px solid var(--dg-color-light-green);
 }
-.carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .line {
+.carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .line, .carousel-conte .menu .carousel-ul .carousel-item2 .marcer-cont .line {
   position: absolute;
   top: 9px;
   left: 3.5px;
@@ -420,7 +416,7 @@ h3 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-.carousel-conte .menu .carousel-ul .carousel-item .drop-menu {
+.carousel-conte .menu .carousel-ul .carousel-item .drop-menu, .carousel-conte .menu .carousel-ul .carousel-item2 .drop-menu {
   height: 100%;
   max-height: 0;
   visibility: hidden;
@@ -430,18 +426,18 @@ h3 {
   -webkit-transition: all 1s ease, max-height 0.8s ease;
   transition: all 1s ease, max-height 0.8s ease;
 }
-.carousel-conte .menu .carousel-ul .carousel-item .drop-menu p {
+.carousel-conte .menu .carousel-ul .carousel-item .drop-menu p, .carousel-conte .menu .carousel-ul .carousel-item2 .drop-menu p {
   font-size: 10px;
   line-height: 16px;
   font-weight: 300;
 }
-.carousel-conte .menu .carousel-ul .carousel-item.open .marcer-cont .point {
+.carousel-conte .menu .carousel-ul .carousel-item.open .marcer-cont .point, .carousel-conte .menu .carousel-ul .carousel-item2.open .marcer-cont .point {
   background-color: var(--dg-color-light-green);
 }
-.carousel-conte .menu .carousel-ul .carousel-item.open .marcer-cont .line {
+.carousel-conte .menu .carousel-ul .carousel-item.open .marcer-cont .line, .carousel-conte .menu .carousel-ul .carousel-item2.open .marcer-cont .line {
   height: calc(100% - 9px);
 }
-.carousel-conte .menu .carousel-ul .carousel-item.open .drop-menu {
+.carousel-conte .menu .carousel-ul .carousel-item.open .drop-menu, .carousel-conte .menu .carousel-ul .carousel-item2.open .drop-menu {
   max-height: 150px;
   height: auto;
   opacity: 1;
@@ -461,17 +457,17 @@ h3 {
   .carousel-conte .menu .carousel-ul {
     margin-top: 20px;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item {
+  .carousel-conte .menu .carousel-ul .carousel-item, .carousel-conte .menu .carousel-ul .carousel-item2 {
     margin: 0 0 15px 0;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .point {
+  .carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .point, .carousel-conte .menu .carousel-ul .carousel-item2 .marcer-cont .point {
     padding: 5.5px;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .line {
+  .carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .line, .carousel-conte .menu .carousel-ul .carousel-item2 .marcer-cont .line {
     top: 12px;
     left: 5px;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item .drop-menu p {
+  .carousel-conte .menu .carousel-ul .carousel-item .drop-menu p, .carousel-conte .menu .carousel-ul .carousel-item2 .drop-menu p {
     font-size: 12px;
     line-height: 20px;
   }
@@ -483,24 +479,24 @@ h3 {
   .carousel-conte .menu .carousel-ul {
     margin-top: 20px;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item {
+  .carousel-conte .menu .carousel-ul .carousel-item, .carousel-conte .menu .carousel-ul .carousel-item2 {
     margin: 0 0 20px 0;
     padding: 0 0 0 55px;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item .carousel-title {
+  .carousel-conte .menu .carousel-ul .carousel-item .carousel-title, .carousel-conte .menu .carousel-ul .carousel-item .carousel-title2, .carousel-conte .menu .carousel-ul .carousel-item2 .carousel-title, .carousel-conte .menu .carousel-ul .carousel-item2 .carousel-title2 {
     font-size: 28px;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .point {
+  .carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .point, .carousel-conte .menu .carousel-ul .carousel-item2 .marcer-cont .point {
     padding: 8px;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .line {
+  .carousel-conte .menu .carousel-ul .carousel-item .marcer-cont .line, .carousel-conte .menu .carousel-ul .carousel-item2 .marcer-cont .line {
     top: 18px;
     left: 8px;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item .drop-menu {
+  .carousel-conte .menu .carousel-ul .carousel-item .drop-menu, .carousel-conte .menu .carousel-ul .carousel-item2 .drop-menu {
     margin-top: 10px;
   }
-  .carousel-conte .menu .carousel-ul .carousel-item .drop-menu p {
+  .carousel-conte .menu .carousel-ul .carousel-item .drop-menu p, .carousel-conte .menu .carousel-ul .carousel-item2 .drop-menu p {
     font-size: 16px;
     line-height: 25px;
     margin-bottom: 5px;
@@ -596,6 +592,9 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
     position: static;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .products-map-cont .products-icon-up .li-item, .products-map-cont .products-icon-batton .li-item {
     position: relative;

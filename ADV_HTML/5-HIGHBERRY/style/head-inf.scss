@@ -26,8 +26,14 @@
         max-width: 869px;
         margin: 0 auto;
         text-align: center;
+        opacity: 0;
+        transform: translateY(150px);
+        transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1.000);
 
-
+        &.animated {
+            opacity: 1;
+            transform: translateY(0);
+          }
         h3{
             color: var(--dg-color-light-green);
             font-weight: 500;

@@ -38,8 +38,17 @@
         gap: 40px;
         grid-template-columns: 1fr 4fr;
 
-    
+        &.conversely{
+            grid-template-columns: 4fr 1fr;
+        }
+        img.order{
+            order: 2;
+        }
         .text-wrap{
+            &.order{
+                order: 1;
+            }
+            
             h2{
                 display: block;
                 font-size: 32px;

@@ -40,6 +40,20 @@
     -ms-grid-columns: 1fr 40px 4fr;
     grid-template-columns: 1fr 4fr;
   }
+  .box-type-tree.conversely {
+    -ms-grid-columns: 4fr 1fr;
+    grid-template-columns: 4fr 1fr;
+  }
+  .box-type-tree img.order {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .box-type-tree .text-wrap.order {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
   .box-type-tree .text-wrap h2 {
     display: block;
     font-size: 32px;
@@ -94,9 +108,7 @@
   padding: 40px 5px;
   border-left: 2px solid var(--dg-color-light-green);
   border-right: 2px solid var(--dg-color-light-green);
-}
-.box-wrap .two-columns-box .wrout img {
-  max-width: 7px;
+  background-image: url(/ADV_HTML/);
 }
 .box-wrap .two-columns-box .two-columns-box-element .inf-wrap {
   border: 1px solid var(--dg-color-light-green);
@@ -136,10 +148,6 @@
     display: block;
     top: -30px;
     height: calc(100% + 30px);
-  }
-  .box-wrap .two-columns-box .wrout img {
-    max-width: 10px;
-    margin: 0 3px;
   }
   .box-wrap .two-columns-box .two-columns-box-element {
     gap: 90px;

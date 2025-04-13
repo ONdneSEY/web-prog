@@ -47,6 +47,41 @@ carouselTitle.forEach(title =>{
     
 });
 
+const carouselTitle2 = document.querySelectorAll(".carousel-title2");
+const imagesMap2 = {
+    'Миття та сушка':     '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-11.png',
+    'Бланшування':        '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-12.png',
+    'Очищення':           '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-13.png',
+    'Видалення кісточки': '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-14.png',
+    'Нарізка':            '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-15.png',
+    'Глазурування':       '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-16.png',
+    'Шнекування':         '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-17.png',
+    'Калібрування':       '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-18.png',
+    'Ручна інспекція':    '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-19.png',
+    'Фасування':          '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-20.png',
+    'ЗАМОРОЖУВАННЯ':      '/ADV_HTML/5-HIGHBERRY/img/bg/carusel-21.png',
+
+  };
+carouselTitle2.forEach(title =>{
+    title.addEventListener('click', function(){
+        const carouselItem = this.closest('.carousel-item2');
+
+        document.querySelectorAll('.carousel-item2').forEach(item =>{
+            item.classList.remove('open');
+        });
+
+        carouselItem.classList.add('open');
+
+        const titleText = this.textContent.trim();
+        const newImage = imagesMap2[titleText];
+        
+        if (newImage && imgCont1) {
+            imgCont1.style.backgroundImage = newImage;
+        }
+    });
+    
+});
+
 
 const imgCon2 =document.querySelector("#img-con2");
 const point = document.querySelectorAll('.point');
@@ -80,3 +115,4 @@ liItems.forEach(item => {
         console.log('Елемент активовано');
     });
 });
+
