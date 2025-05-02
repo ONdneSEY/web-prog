@@ -24,7 +24,6 @@ menuWrapper.addEventListener("click", ()=>{
 
 
 
-
 const animateItemsSequentially = (items) => {
     
     items.forEach((item, index) => {
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
   header.style.position = 'relative';
   
   let lastScroll = 0;
-  const scrollThreshold = 0;
+  const scrollThreshold = 1;
   
   window.addEventListener('scroll', function() {
     const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
@@ -61,6 +60,32 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     lastScroll = currentScroll;
+  });
+});
+
+const buttonsMenu = document.querySelectorAll('.button-dror-menu');
+    
+buttonsMenu.forEach(button => {
+    button.addEventListener('click', function() {
+        const menu = this.closest('.open-menu-icon').querySelector('.button-dror-menu');
+            
+        menu.classList.toggle('open');
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const dropButtons = document.querySelectorAll('.button-dror-menu');
+  
+  dropButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      const menu = this.closest('.menu-item').querySelector('.open-menu-icon');
+
+      menu.classList.toggle('open');
+    });
   });
 });
 

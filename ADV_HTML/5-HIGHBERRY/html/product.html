@@ -8,14 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/reset.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/header.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/main-min.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/video-full-screen.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/footer.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/head-inf.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/product.css">
-    <title>HIGHBERRY – GROWN AND FROZEN IN UKRAINE</title>
+    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/higberry-gulp/dist/css/app.css">
+    <title>Продуція HIGHBERRY – GROWN AND FROZEN IN UKRAINE</title>
 </head>
 <body>
     <header class="style-header">
@@ -86,29 +80,44 @@
                     </div>
                     <ul class="menu-ul">
                         <li class="menu-item ">
-                            <a href="abaut-as.html" class="upertext">про нас</a>
-                            <div class="open-menu-icon"></div>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="groving.html" class="upertext">вирощування</a>
-                            <div class="open-menu-icon"></div>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="producion.html" class="upertext">виродницство</a>
-                            <div class="open-menu-icon"></div>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="product.html" class="upertext">продукця</a>
-                            <div class="open-menu-icon">
-    
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/abaut-as.html" class="upertext">про нас</a>
                             </div>
+                            <div class="open-menu-icon"></div>
                         </li>
                         <li class="menu-item ">
-                            <a href="vacancies.html" class="upertext">вакансії</a>
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/groving.html" class="upertext">вирощування</a>
+                            </div>
+                            <div class="open-menu-icon"></div>
+                        </li>
+                        <li class="menu-item ">
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/producion.html" class="upertext">виродницство</a>
+                            </div>
                             <div class="open-menu-icon"></div>
                         </li>
                         <li class="menu-item">
-                            <a href="news.html" class="upertext">новини</a>
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product.html" class="upertext">продукця</a>
+                                <img class="button-dror-menu" src="/ADV_HTML/5-HIGHBERRY/img/icon/Vector open.png" alt="">
+                            </div>
+                            <div class="open-menu-icon">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product/fresh/fresh.html">Свіжа</a>
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen.html">Заморожена</a>
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product/retail/retail.html">Роздріб</a>
+                            </div>
+                        </li>
+                        <li class="menu-item ">
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/vacancies.html" class="upertext">вакансії</a>
+                            </div>
+                            <div class="open-menu-icon"></div>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/event.html" class="upertext">Події</a>
+                            </div>
                             <div class="open-menu-icon"></div>
                         </li>
                     </ul>
@@ -166,42 +175,43 @@
         <div class="top-margin">
             <div class="mar-auuto con-max-width"> 
                 <div class="filter-wrap">
-                    <img src="/ADV_HTML/5-HIGHBERRY/img/logo/filter.png" alt="">
+                    <img id="button-filter" src="/ADV_HTML/5-HIGHBERRY/img/logo/filter.png" alt="">
                     <div class="line"></div>
 
                     <ul class="filter-menu active">
                         <li class="filter-element">
                             <div class="filter-elem">
-                                <a href="" class="upertext">СВІЖА</a>
-                                <img src="/ADV_HTML/5-HIGHBERRY/img/icon/Vector open.png" alt="">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product/fresh/fresh.html" class="upertext">СВІЖА</a>
+                                <img class="button-filt-open" src="/ADV_HTML/5-HIGHBERRY/img/icon/Vector open.png" alt="">
                             </div>
                             <ul class="filter-drop-menu">
-                                <li class="filter-element-drop"><a href="">Свіжі ягоди, фрукти</a></li>
-                                <li class="filter-element-drop"><a href="">Свіжі овочі</a></li>
+                                <li class="filter-element-drop"><a href="/ADV_HTML/5-HIGHBERRY/html/product/fresh/berries and fruits.html">Свіжі ягоди, фрукти</a></li>
+                                <li class="filter-element-drop"><a href="/ADV_HTML/5-HIGHBERRY/html/product/fresh/vegetables.html">Свіжі овочі</a></li>
                             </ul>
+
                         </li>
 
                         <li class="filter-element">
                             <div class="filter-elem">
-                                <a href="" class="upertext">ЗАМОРОЖЕНА</a>
-                                <img src="/ADV_HTML/5-HIGHBERRY/img/icon/Vector open.png" alt="">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen.html" class="upertext">ЗАМОРОЖЕНА</a>
+                                <img class="button-filt-open" src="/ADV_HTML/5-HIGHBERRY/img/icon/Vector open.png" alt="">
                             </div>
                             <ul class="filter-drop-menu">
-                                <li class="filter-element-drop"><a href="">ягоди, фрукти</a></li>
-                                <li class="filter-element-drop"><a href="">Фруктово-ягідне пюре</a></li>
-                                <li class="filter-element-drop"><a href="">Овочі, гриби</a></li>
-                                <li class="filter-element-drop"><a href="">Суміші</a></li>
-                            </ul>
+                                <li class="filter-element-drop"><a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen-fruts.html">ягоди, фрукти</a></li>
+                                <li class="filter-element-drop"><a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen-mash.html">Фруктово-ягідне пюре</a></li>
+                                <li class="filter-element-drop"><a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen-vegetables.html">Овочі, гриби</a></li>
+                                <li class="filter-element-drop"><a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/froze-mixtures.html">Суміші</a></li>
+                              </ul>
                         </li>
 
                         <li class="filter-element">
                             <div class="filter-elem">
-                                <a href="" class="upertext">РОЗДРІБНІ БРЕНДИ</a>
-                                <img src="/ADV_HTML/5-HIGHBERRY/img/icon/Vector open.png" alt="">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product/retail/retail.html" class="upertext">РОЗДРІБНІ БРЕНДИ</a>
+                                <img class="button-filt-open" src="/ADV_HTML/5-HIGHBERRY/img/icon/Vector open.png" alt="">
                             </div>
                             <ul class="filter-drop-menu">
-                                <li class="filter-element-drop"><a href="">ТМ  HIGHBERRY</a></li>
-                                <li class="filter-element-drop"><a href="">ТМ  FLORINITI</a></li>
+                                <li class="filter-element-drop"><a href="/ADV_HTML/5-HIGHBERRY/html/product/retail/retail-highberry.html">ТМ  HIGHBERRY</a></li>
+                                <li class="filter-element-drop"><a href="/ADV_HTML/5-HIGHBERRY/html/product/retail/retail-florinti.html">ТМ  FLORINITI</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -209,13 +219,127 @@
             </div>
         </div>
     </div> 
+
+    <script src="/ADV_HTML/5-HIGHBERRY/js/product.js"></script>
     
     <div class="layout-wrapper">
         <div class="top-margin">
             <div class="mar-auuto con-max-width"> 
+                <div class="product-wrap box_shadow">
+                    <a href="/ADV_HTML/5-HIGHBERRY/html/product/fresh/fresh.html" class="upertext">свіжа продукція</a>
+                    <div class="line"></div>
+                    <div class="product-element-wrap element-2">
+                        <a href="/ADV_HTML/5-HIGHBERRY/html/product/fresh/berries and fruits.html">
+                            <div class="product">
+                                <div class="icon">
+                                    <img src="/ADV_HTML/5-HIGHBERRY/img/image/product-1.png" alt="">
+                                </div>
+                                <h3 class="upertext">свіжі ягоди/фрукти</h3>
+                            </div>
+                        </a>
+
+                        <a href="/ADV_HTML/5-HIGHBERRY/html/product/fresh/vegetables.html">
+                            <div class="product">
+                                <div class="icon">
+                                    <img src="/ADV_HTML/5-HIGHBERRY/img/image/product-2.png" alt="">
+                                </div>
+                                <div class="text">
+                                    <h3 class="upertext">свіжі ОВОЧІ</h3>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>   
+
+    <div class="layout-wrapper">
+        <div class="top-margin">
+            <div class="mar-auuto con-max-width"> 
+                <div class="product-wrap box_shadow">
+                    <a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen.html" class="upertext">свіжа продукція</a>
+                    <div class="line"></div>
+                    <div class="product-element-wrap element-3">
+                        <a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen-fruts.html">
+                            <div class="product">
+                                <div class="icon">
+                                    <img src="/ADV_HTML/5-HIGHBERRY/img/image/product-3.png" alt="">
+                                </div>
+                                <h3 class="upertext">заморожені ягоди/фрукти</h3>
+                            </div>
+                        </a>
+                        
+                        <a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/wildflowers.html">
+                            <div class="product">
+                                <div class="icon">
+                                    <img src="/ADV_HTML/5-HIGHBERRY/img/image/product-4.png" alt="">
+                                </div>
+                                <h3 class="upertext">ЗАМОРОЖЕН ДИКОРОСИ</h3>
+                            </div>
+                        </a>
+
+                        <a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen-mash.html">
+                            <div class="product">
+                                <div class="icon">
+                                    <img src="/ADV_HTML/5-HIGHBERRY/img/image/product-5.png" alt="">
+                                </div>
+                                <h3 class="upertext">заморожене пюре</h3>
+                            </div>
+                        </a>
+
+                        <a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen-vegetables.html">
+                            <div class="product">
+                                <div class="icon">
+                                    <img src="/ADV_HTML/5-HIGHBERRY/img/image/product-6.png" alt="">
+                                </div>
+                                <h3 class="upertext">заморожені овочі / гриби</h3>
+                            </div>
+                        </a>
+                        
+                        <a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/froze-mixtures.html">
+                            <div class="product">
+                                <div class="icon aligh-item-end">
+                                    <img src="/ADV_HTML/5-HIGHBERRY/img/image/product-7.png" alt="">
+                                </div>
+                                <h3 class="upertext">заморожені суміші</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+
+    <div class="layout-wrapper">
+        <div class="top-margin">
+            <div class="mar-auuto con-max-width"> 
+                <div class="product-wrap box_shadow">
+                    <a href="/ADV_HTML/5-HIGHBERRY/html/product/retail/retail.html" class="upertext">свіжа продукція</a>
+                    <div class="line"></div>
+                    <div class="product-element-wrap element-2">
+                        <a href="/ADV_HTML/5-HIGHBERRY/html/product/retail/retail-highberry.html">
+                            <div class="product">
+                                <div class="icon">
+                                    <img src="/ADV_HTML/5-HIGHBERRY/img/image/product-8.png" alt="">
+                                </div>
+                                <h3 class="upertext">тм highberry</h3>
+                            </div>
+                        </a>
+                        
+                        <a href="/ADV_HTML/5-HIGHBERRY/html/product/retail/retail-florinti.html">
+                            <div class="product">
+                                <div class="icon">
+                                    <img src="/ADV_HTML/5-HIGHBERRY/img/image/product-9.png" alt="">
+                                </div>
+                                <h3 class="upertext">tm florinity</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
 
     <div class="layout-wrapper">
         <div class="top-margin">
@@ -228,19 +352,19 @@
         <div class="grid footer-wrap">
             <div class="foot-top-right">
                 <div class="regist-box">
-                    <input type="text" class="input-log" placeholder="Підприємство*">
-                    <input type="text" class="input-log" placeholder="ПІБ*">
-                    <input type="text" class="input-log" placeholder="Телефон*">
-                    <input type="text" class="input-log" placeholder="E-maill*">
+                    <input id="compani" type="text" class="input-log" placeholder="Підприємство*">
+                    <input id="person" type="text" class="input-log" placeholder="ПІБ*">
+                    <input id="phone" type="text" class="input-log" placeholder="Телефон*">
+                    <input id="maill" type="text" class="input-log" placeholder="E-mail*">
 
                     <div class="confirm">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" class="checkbox" id="consent-checkbox">
                         <div class="text">
                             <p class="text-top">* пункти обов'язкові для заповнення</p>
                             <p class="text-bottom">Даю згоду на обробку, зберігання та використання особистих даних</p>
                         </div>
                     </div>
-                    <div class="batton-footer upertext">надіслати заявку</div>
+                    <button class="batton-footer upertext" id="submit-button">надіслати заявку</button>
                 </div>
 
                 <div class="grid contact">
@@ -363,4 +487,5 @@
     <script src="/ADV_HTML/5-HIGHBERRY/js/appearance-boxing.js"></script>
     <script src="/ADV_HTML/5-HIGHBERRY/js/header.js"></script>
     <script src="/ADV_HTML/5-HIGHBERRY/js/carousel.js"></script>
+    <script src="/ADV_HTML/5-HIGHBERRY/js/footer.js"></script>
 </html>

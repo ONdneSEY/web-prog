@@ -8,12 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/reset.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/header.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/main-min.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/video-full-screen.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/footer.css">
-    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/style/head-inf.css">
+    <link rel="stylesheet" href="/ADV_HTML/5-HIGHBERRY/higberry-gulp/dist/css/app.css">
     <title>HIGHBERRY – GROWN AND FROZEN IN UKRAINE</title>
 </head>
 <body>
@@ -85,29 +80,44 @@
                     </div>
                     <ul class="menu-ul">
                         <li class="menu-item ">
-                            <a href="abaut-as.html" class="upertext">про нас</a>
-                            <div class="open-menu-icon"></div>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="groving.html" class="upertext">вирощування</a>
-                            <div class="open-menu-icon"></div>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="producion.html" class="upertext">виродницство</a>
-                            <div class="open-menu-icon"></div>
-                        </li>
-                        <li class="menu-item ">
-                            <a href="product.html" class="upertext">продукця</a>
-                            <div class="open-menu-icon">
-    
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/abaut-as.html" class="upertext">про нас</a>
                             </div>
+                            <div class="open-menu-icon"></div>
                         </li>
                         <li class="menu-item ">
-                            <a href="vacancies.html" class="upertext">вакансії</a>
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/groving.html" class="upertext">вирощування</a>
+                            </div>
+                            <div class="open-menu-icon"></div>
+                        </li>
+                        <li class="menu-item ">
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/producion.html" class="upertext">виродницство</a>
+                            </div>
                             <div class="open-menu-icon"></div>
                         </li>
                         <li class="menu-item">
-                            <a href="news.html" class="upertext">новини</a>
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product.html" class="upertext">продукця</a>
+                                <img class="button-dror-menu" src="/ADV_HTML/5-HIGHBERRY/img/icon/Vector open.png" alt="">
+                            </div>
+                            <div class="open-menu-icon">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product/fresh/fresh.html">Свіжа</a>
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product/frozen/frozen.html">Заморожена</a>
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/product/retail/retail.html">Роздріб</a>
+                            </div>
+                        </li>
+                        <li class="menu-item ">
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/vacancies.html" class="upertext">вакансії</a>
+                            </div>
+                            <div class="open-menu-icon"></div>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-title">
+                                <a href="/ADV_HTML/5-HIGHBERRY/html/event.html" class="upertext">Події</a>
+                            </div>
                             <div class="open-menu-icon"></div>
                         </li>
                     </ul>
@@ -230,19 +240,19 @@
         <div class="grid footer-wrap">
             <div class="foot-top-right">
                 <div class="regist-box">
-                    <input type="text" class="input-log" placeholder="Підприємство*">
-                    <input type="text" class="input-log" placeholder="ПІБ*">
-                    <input type="text" class="input-log" placeholder="Телефон*">
-                    <input type="text" class="input-log" placeholder="E-maill*">
+                    <input id="compani" type="text" class="input-log" placeholder="Підприємство*">
+                    <input id="person" type="text" class="input-log" placeholder="ПІБ*">
+                    <input id="phone" type="text" class="input-log" placeholder="Телефон*">
+                    <input id="maill" type="text" class="input-log" placeholder="E-mail*">
 
                     <div class="confirm">
-                        <input type="checkbox" class="checkbox">
+                        <input type="checkbox" class="checkbox" id="consent-checkbox">
                         <div class="text">
                             <p class="text-top">* пункти обов'язкові для заповнення</p>
                             <p class="text-bottom">Даю згоду на обробку, зберігання та використання особистих даних</p>
                         </div>
                     </div>
-                    <div class="batton-footer upertext">надіслати заявку</div>
+                    <button class="batton-footer upertext" id="submit-button">надіслати заявку</button>
                 </div>
 
                 <div class="grid contact">
@@ -365,4 +375,5 @@
     <script src="/ADV_HTML/5-HIGHBERRY/js/appearance-boxing.js"></script>
     <script src="/ADV_HTML/5-HIGHBERRY/js/header.js"></script>
     <script src="/ADV_HTML/5-HIGHBERRY/js/carousel.js"></script>
+    <script src="/ADV_HTML/5-HIGHBERRY/js/footer.js"></script>
 </html>
