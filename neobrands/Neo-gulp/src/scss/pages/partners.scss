@@ -1,0 +1,83 @@
+.partners{
+    display: none;
+    padding: 110px 0;
+
+    .text-box{
+        padding: 42px 0 0;
+        text-align: center;
+        padding-bottom: 100px;
+
+        h3{
+            font-size: 27px;
+            line-height: 32.4px;
+            font-weight: 200;
+            font-style: italic;
+            padding-bottom: 12px;
+        }
+
+        h2{
+            font-size: 34px;
+            font-weight: 800;
+        }
+    }
+
+
+    .table{
+        
+        ul{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 120px);
+            align-items: center;
+            justify-items: center;
+            list-style-type: none;
+            
+            li{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+        
+                img{
+                    max-width: 100%;
+                    max-height: 100%;
+                    object-fit: contain;
+                }
+
+                &:nth-of-type(2){
+                    border-left: 1px solid #d064a3;
+                    border-right: 1px solid #d064a3;
+                    border-bottom: 1px solid #d064a3;
+                }
+                &:nth-of-type(1),
+                &:nth-of-type(3){
+                    border-bottom: 1px solid #d064a3;
+                }
+
+                &:nth-of-type(5){
+                    border-left: 1px solid #d064a3;
+                    border-right: 1px solid #d064a3;
+                }
+
+                &:nth-of-type(1),
+                &:nth-of-type(4){
+                    img{
+                        padding-right: 50px;
+                    }
+                }
+
+                &:nth-of-type(3),
+                &:nth-of-type(6){
+                    img{
+                        padding-left: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: $min-width-big){
+        display: block;
+    }
+}
