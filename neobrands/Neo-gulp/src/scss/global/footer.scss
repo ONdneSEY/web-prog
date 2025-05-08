@@ -1,0 +1,128 @@
+$min-width-midel: 768px;
+$min-width-big: 1180px;
+
+footer{
+    display: grid;
+    gap: 20px;
+    align-items: center;
+    padding: 40px 0px;
+
+    .logo-box{
+        text-align: center;
+        padding: 30px 0px;
+
+        img{
+            max-width: 171.5px;
+            width: 100%;
+        }
+    }
+
+    .element{
+        display: grid;
+        text-align: center;
+        gap: 30px;
+
+        h6{
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 900;
+        }
+
+        .list{
+            
+
+            .list-element{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                list-style-type: none;
+
+                p{
+                    font-size: 12px;
+                    line-height: 50px;
+                }
+
+                .location{
+                    width: 116px;
+                    font-size: 12px;
+                    line-height: 18px;
+                    text-align: start;
+                    padding: 10px 0 10px 10px;
+                }
+            }
+        }
+    }
+
+    .social{
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 0;
+        gap: 30px;
+        text-align: center;
+
+        h6{
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 900;
+        }
+
+        .social-box{
+            gap: 28px;
+            justify-content: center;
+
+            .social-img{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30.8px;
+                height: 30.8px;
+                background-color: white;
+                border-radius: 50%;
+
+            }
+        }
+    }
+
+    @media screen and (min-width: $min-width-midel){
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-content: space-between;
+        align-items: start;
+        padding: 40px 30px;
+
+        .logo-box{
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        
+        .element{
+            text-align: start;
+            gap: 60px;
+
+            .list{
+                .list-element{
+                    justify-content: start;
+                }
+            }
+        }
+
+        .social{
+            padding: 0px;
+            gap: 60px;
+            align-items: start;
+        }
+    }
+
+    @media screen and (min-width: $min-width-big){
+        padding: 70px 12px;
+
+        .logo-box{
+           img{
+                max-width: 237.36px;
+           }
+        }
+    }
+}

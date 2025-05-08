@@ -1,0 +1,79 @@
+$min-width-midel: 768px;
+$min-width-big: 1180px;
+
+.contact-bg{
+    background-image: url(/img/imges/CTA-bg.png);
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .contact-box{
+        display: grid;
+
+        .contact-text{
+            padding: 29px 0px 30px ;
+    
+            h4{
+                font-size: 37px;
+                line-height: 44.4px;
+                font-weight: 800;
+                padding-bottom: 25px;
+            }
+    
+            p{
+                font-size: 16px;
+                line-height: 22.4px;
+                font-weight: 400;
+            }
+        }
+    
+        .contact-element{
+            display: grid;
+            justify-items: start;
+    
+            input{
+                width: calc(100% - 72px);
+                padding: 19px 31px;
+                border: 1px solid #5E304D;
+                background-color: #1c1a22a4;
+                margin: 0 5px;
+                margin-bottom: 30px;
+                border-radius: 20px;
+                color: white;
+            }
+            input::placeholder{
+                font-size: 16px;
+                color: white;
+            }
+    
+            .type2{
+                padding: 19px 31px 70px;
+            }
+    
+            .button{
+                box-sizing: border-box;
+                margin: 0 5px;
+                padding: 13.8px 33px;
+                border: 1px solid #5E304D;
+                background-color: #1c1a22a4;
+                margin-bottom: 30px;
+                border-radius: 33px 13.8px;
+                border-radius: 40px;
+            }
+        }
+    }
+
+    @media screen and (min-width: $min-width-midel){
+        background-size: cover;
+
+        .contact-box{
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 127px 0px;
+
+            .contact-element{
+                margin-top: 40px;
+            }
+        }
+    }
+}
