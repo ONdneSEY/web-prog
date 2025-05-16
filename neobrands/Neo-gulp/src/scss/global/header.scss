@@ -11,7 +11,12 @@ header{
     align-items: center;
     background-color: #16151B;
 
-
+    &.fixed{
+        position: fixed;
+        top: 0 ;
+        left: 0;
+        z-index: 1000;
+    }
     .logo{
         a{
             height: auto;

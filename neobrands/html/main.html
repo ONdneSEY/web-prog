@@ -9,10 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="/Neo-gulp/dist/css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>NeoBrands</title>
 </head>
 <body>
-    <header class="flex">
+    <header id="header" class="flex">
         <div class="logo">
             <a href="">
                 <img src="/img/logo/LOGO.png" alt="">
@@ -60,6 +62,29 @@
             </ul>
         </div>
     </header> 
+
+    
+    <script >
+       let lastScroll = 0;
+const $header = $('#header');
+
+$(window).scroll(function() {
+  const currentScroll = $(this).scrollTop();
+  
+  if (currentScroll <= 0) {
+    $header.removeClass('fixed');
+    return;
+  }
+
+  if (currentScroll > lastScroll && !$header.hasClass('header--hidden')) {
+    $header.addClass('fixed');
+  } else if (currentScroll < lastScroll && $header.hasClass('header--hidden')) {
+    $header.removeClass('fixed');
+  }
+
+  lastScroll = currentScroll;
+});
+    </script>
     
     <div class="block-wrapper">
         <div class="main-video-big">
@@ -161,25 +186,82 @@
                             for it</h1>
                     </div>
                     <div class="description-box">
-                        <div>
-                            <p>
-                                There's nothing worse than losing
-                                or damaging your wedding ring mid
-                                workout. These silicon rings can be
-                                worn in their stead to protect both
-                                the ring and your fingers.
-                            </p>
-        
-                            <h5 class="pink">BY GABRIELLE HONDORP DEC 14, 2021</h5>
-                            <div class="star-box flex">
-                                <li class="star" id="star1"></li>
-                                <li class="star" id="star2"></li>
-                                <li class="star" id="star3"></li>
-                                <li class="star" id="star4"></li>
-                                <li class="star" id="star5"></li>
-                            </div>
-                            <div class="logo">
-                                <img src="/img/logo/Tpam0ho.png.png">
+                        <div class="content-container">
+                            <div class="content-wrapper">
+                                <!-- Контент 1 -->
+                                <div class="content active">
+                                    <p>
+                                        There's nothing worse than losing
+                                        or damaging your wedding ring mid
+                                        workout. These silicon rings can be
+                                        worn in their stead to protect both
+                                        the ring and your fingers.
+                                    </p>
+                                    <h5 class="pink">BY GABRIELLE HONDORP DEC 14, 2021</h5>
+                                    <div class="star-box flex">
+                                        <li class="star" id="star1"></li>
+                                        <li class="star" id="star2"></li>
+                                        <li class="star" id="star3"></li>
+                                        <li class="star" id="star4"></li>
+                                        <li class="star" id="star5"></li>
+                                    </div>
+                                    <div class="logo">
+                                        <img src="/img/logo/Tpam0ho.png.png">
+                                    </div>
+                                </div>
+                                
+                                <!-- Контент 2 -->
+                                <div class="content">
+                                    <p>
+                                        Second content block with different
+                                        text to demonstrate the switching
+                                        functionality between slides.
+                                    </p>
+                                    <h5 class="pink">BY AUTHOR NAME JAN 1, 2022</h5>
+                                    <div class="star-box flex">
+                                        <li class="star" id="star1"></li>
+                                        <li class="star" id="star2"></li>
+                                        <li class="star" id="star3"></li>
+                                    </div>
+                                    <div class="logo">
+                                        <img src="/img/logo/Tpam0ho.png.png">
+                                    </div>
+                                </div>
+                                
+                                <!-- Контент 3 -->
+                                <div class="content">
+                                    <p>
+                                        Third content example showing how
+                                        the animation works when you click
+                                        on different navigation points.
+                                    </p>
+                                    <h5 class="pink">BY ANOTHER AUTHOR FEB 15, 2022</h5>
+                                    <div class="star-box flex">
+                                        <li class="star" id="star1"></li>
+                                        <li class="star" id="star2"></li>
+                                        <li class="star" id="star3"></li>
+                                        <li class="star" id="star4"></li>
+                                    </div>
+                                    <div class="logo">
+                                        <img src="/img/logo/Tpam0ho.png.png">
+                                    </div>
+                                </div>
+                                
+                                <!-- Контент 4 -->
+                                <div class="content">
+                                    <p>
+                                        Final content block to complete
+                                        the set of four different slides
+                                        that can be navigated through.
+                                    </p>
+                                    <h5 class="pink">BY LAST AUTHOR MAR 30, 2022</h5>
+                                    <div class="star-box flex">
+                                        <li class="star" id="star1"></li>
+                                    </div>
+                                    <div class="logo">
+                                        <img src="/img/logo/Tpam0ho.png.png">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="point-box flex">
@@ -194,6 +276,7 @@
             </div>
         </div>
     </div>
+    <script src="/js/carusel.js"></script>
 
     <div class="block-wrapper">
         <div class="customers">
@@ -418,16 +501,16 @@
                     </div>
                     
                     <div class="contact-element">
-                        <input type="text" class="type1" placeholder="Name">
-                        <input type="text" class="type1" placeholder="Email">
-                        <input type="text" class="type2" placeholder="Yuor Massenger">
-                        <div class="button">Send</div>
+                        <input id="name" type="text" class="type1" placeholder="Name">
+                        <input id="email" type="text" class="type1" placeholder="Email">
+                        <input id="uMassenger" type="text" class="type2" placeholder="Yuor Massenger">
+                        <div id="send" class="button">Send</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+<script src="/js/form.js"></script>
     <div class="block-wrapper">
         <div class="max-width m-auto">
             

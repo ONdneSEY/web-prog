@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+.m-top{
+    margin: 20px;
+}
+.m-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    font-size: 42px;
+}
