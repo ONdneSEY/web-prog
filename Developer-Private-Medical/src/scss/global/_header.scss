@@ -11,6 +11,7 @@ header{
             position: static;
             top: 0;
             left: 0;
+            z-index: 1000;
             padding: 30px 30px 0;
             display: flex;
             justify-content: space-between;
@@ -48,6 +49,7 @@ header{
                     display: none;
                     gap: 5px;
                     font-family: $font-second;
+                    align-items: center;
 
                     p{
                         font-size: 16px;
@@ -56,8 +58,8 @@ header{
                     }
 
                     img{
-                        width: 100%;
-                        height: 100%;
+                        max-width: 17px;
+                        max-height: 17px;
                     }
                 }
 
@@ -78,6 +80,7 @@ header{
                     }
 
                     menu{
+                        display: none;
 
                         .logo-box{
                             
@@ -112,6 +115,7 @@ header{
         left: 0;
         width: 100%;
         height: 100%;
+        z-index: -1;
 
         img{
             width: 100%;
@@ -120,16 +124,14 @@ header{
         }
     }
 }
+
 @media (min-width: $breakpoint-xl) {
     header{
 
         .header-main{
 
             .menu-header{
-                padding: 30px 30px 0;
-                display: flex;
-                justify-content: space-between;
-
+                padding: 50px 50px 0;
 
                 .elem-left{
                     margin-top: 5px;
@@ -141,10 +143,6 @@ header{
                 .elem-right{
 
                     ul{
-                        display: flex;
-                    }
-                    
-                    .button{
                         display: flex;
                     }
 

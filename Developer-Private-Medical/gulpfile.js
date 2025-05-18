@@ -17,7 +17,7 @@ async function loadImagemin() {
 const paths = {
   scss: 'src/scss/**/*.scss',
   js: 'src/js/**/*.js',
-  images: 'src/images/**/*',
+  images: 'src/images/**/**/*',
   html: 'src/**/*.html', // Добавлено
   dist: 'dist/'
 };
