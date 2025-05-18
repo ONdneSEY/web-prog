@@ -35,7 +35,7 @@ header{
                     list-style-type: none;
 
                     .li{
-                        padding: 0 18px;
+                        padding: 0 16px;
                         color: $color-text;
                         text-decoration: none;
                     }
@@ -79,33 +79,126 @@ header{
                         }
                     }
 
-                    menu{
+                    .menu{
                         display: none;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        padding: 30px;
+                        z-index: 1100;
+                        background-color: $color-blue;
 
                         .logo-box{
+                            display: flex;
+                            align-items: start;
+                            justify-content: space-between;
                             
                             .logo{
                                 width: 138px;
+                                height: 62.03px;
                             }
 
                             .close{
-                                width: 200px;
-                                height: 200px;
+                                position: relative;
+
+                                div{
+                                    width: 40px;
+                                    height: 40px;
+                                    background-color: $color-text;
+                                }
+                                div:nth-of-type(1){
+                                    position: absolute;
+                                    clip-path: polygon(98% 0, 100% 2%, 2% 100%, 0 98%);
+                                }
+                                div:nth-of-type(2){
+                                    clip-path: polygon(0% 2%, 2% 0, 100% 98%, 98% 100%);
+                                }
                             }
                         }
 
                         ul{
+                            padding: 0;
+                            margin: 80px 0;
+                            display: flex;
+                            flex-direction: column;
                             list-style-type: none;
 
                             .li{
-                                padding: 0 10px;
-                                font-size: 16px;
+                                width: 100%;
+                                padding: 15px 0;
+                                font-size: 42px;
                                 border-top: 1px solid $color-text;
+                            }
+                        }
+                        .button{
+                            display: flex;
+                            margin: 0;
+                            justify-content: space-between;
+                        }
+
+                        .bg{
+                            position: absolute;
+                            z-index: -1;
+                            top: 0;
+                            left: 0; 
+                            width: 100%;
+                            height: 100%;
+                            
+
+                            img{
+                                width: 100%;
+                                height: 100%;
                             }
                         }
                     }
                 }
             } 
+        }
+
+        .img-center{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            .img1{
+                max-width: 290.22px;
+                transform: rotate(-11.48deg);
+            }
+
+            .img2{
+                max-width: 296.97px;
+                transform: rotate(-12.44deg) translate(0, -12%);
+                margin-left: 40px;
+            }
+
+            .img3{
+                max-width: 248.81px;
+                transform: rotate(-11.16deg) translate(0, -30%);
+                margin-left: 115px;
+            }
+        }
+
+
+
+        .signature{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 90%;
+            padding: 0 30px;
+            
+            padding-bottom: 40px;
+
+            p{
+               font-size: 16px;
+               font-weight: 100;
+               line-height: 25px;
+               color: $color-text; 
+            }
         }
     }
 
@@ -129,12 +222,14 @@ header{
     header{
 
         .header-main{
+            height: 799px;
 
             .menu-header{
                 padding: 50px 50px 0;
 
                 .elem-left{
                     margin-top: 5px;
+
                     .logo{
                         width: 165px;
                     }
@@ -146,10 +241,49 @@ header{
                         display: flex;
                     }
 
+                    .button{
+                        display: flex;
+                    }
+
                     .drop-ul{
                         display: none;
                     }
+
+
                 } 
+            }
+
+            .img-center{
+
+                .img1{
+                    max-width: 643px;
+                    
+                }
+
+                .img2{
+                    max-width: 647px;
+                    margin-left: 100px;
+                    transform: rotate(-12.44deg) translate(0, -18%);
+                }
+
+                .img3{
+                    max-width: 551.25px;
+                    margin-left: 260px;
+                    transform: rotate(-12.44deg) translate(0, -40%);
+                }
+            }
+
+            .signature{
+                width: auto;
+                left: 50%;
+                transform: translate(-50%, 0);
+                padding: 0;
+                padding-bottom: 50px;
+
+                p{
+                    font-size: 26px;
+                    line-height: 41px;
+                }
             }
         }
     }
