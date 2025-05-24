@@ -5,12 +5,14 @@
     font-family: $font-main;
     font-weight: 400;
     font-style: normal;
+    color: $color-text;
+    transition: 0.6s;
 }
 body{
     background-image: url(/dist/images/bg/body.png);
-    background-position: center;
-    background-size: 100% 100%;
-    background-repeat: repeat-x;
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-color: #FFFCF2;
 }
 .flex{
     display: flex;
@@ -25,6 +27,17 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
+.m-right{
+    margin-right: 30px;
+}
+
+.m-left{
+    margin-left: 30px;
+}
+.p-inline{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 h1{
     font-size: 42px;
@@ -37,4 +50,93 @@ h1{
 .m-auto{
     margin-left: auto;
     margin-right: auto;
+}
+h1{
+    font-size: 54px;
+}
+
+h2{
+    font-size: 42px;
+}
+
+h3{
+    font-size: 32px;
+    
+}
+p{
+    font-size: 16px;
+}
+.bg-green{
+    background: $gradient-green !important;
+}
+
+.bg-blue{
+    background: $gradient-blue !important;
+}
+
+a{
+    text-decoration: none;
+}
+.button{
+    padding: 20px;
+    margin-left: 18px;
+    border: 1px solid $color-text;
+    border-radius: 5px;
+    display: flex;
+    gap: 5px;
+    font-family: $font-second;
+    align-items: center;
+
+    p{
+        font-size: 16px;
+        line-height: 16px;
+        color: $color-text;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        max-width: 17px;
+        max-height: 17px;
+    }
+}
+
+
+
+@media (min-width: $breakpoint-xl){
+    h2{
+        font-size: 70px;
+    }
+    h3{
+        font-size: 46px;
+    }    
+    
+    .m-right{
+        margin-right: 100px;
+    }
+
+    .m-left{
+        margin-left: 100px;
+    }
+
+    .p-inline{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    h1{
+        font-size: 118px;
+    }
+
+    h2{
+        font-size: 42px;
+    }
+
+    h3{
+        font-size: 60px;
+        
+    }
+    p{
+        font-size: 19px;
+    }
 }

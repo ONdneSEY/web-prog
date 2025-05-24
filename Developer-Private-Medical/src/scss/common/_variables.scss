@@ -2,10 +2,14 @@ $color-text: #fff;
 $color-primary: #3498db;
 $color-secondary: #2ecc71;
 $color-blue: #012C44;
-
+$color-black: #000;
+$color-dairy: #FFFCF2;
 
 $font-main: "Atkinson Hyperlegible Mono", sans-serif;
 $font-second: "Abhaya Libre", serif;
+
+$gradient-blue: linear-gradient(45deg,rgba(1, 44, 68, 1) 0%, rgba(1, 75, 115, 1) 100%);
+$gradient-green: linear-gradient(45deg,rgba(16, 41, 30, 1) 0%, rgba(26, 65, 48, 1) 63%);
 
 $box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
@@ -13,3 +17,5 @@ $breakpoint-xl: 1280px;
 $breakpoint-l: 1024px;
 $breakpoint-m: 768px;
 $breakpoint-s: 390px;
+
+

@@ -1,0 +1,108 @@
+.block3{
+    padding-top: 250px;
+
+    .text-box{
+        padding-bottom: 60px;
+
+        p{
+            font-weight: 800;
+            padding-bottom: 30px;
+        }
+
+        h3{
+            font-family: $font-second;
+        }
+    }
+
+    .image{
+        width: calc(100% - 28px);
+        height: 330px;
+        background-image: url(/dist/images/img/img-6.png);
+        background-size: cover;
+    }
+
+    .statistics-wrap{
+        padding: 0;
+        padding-top: 55px;
+        z-index: 0px;
+        
+        .statistics{
+            padding: 0;
+            padding-bottom: 40px;
+
+            .element{
+                padding: 0;
+                border-bottom: 1px solid $color-dairy; 
+                padding-top: 40px;
+                padding-bottom: 40px;
+
+                &.border{
+                    border: 0;
+                }
+                .text{
+
+                    .numder{
+                        color: $color-dairy;
+                    }
+
+                    .mark{
+                        color: $color-dairy;
+                        font-weight: 800;
+                    }
+                }
+            }
+        }
+
+        .button{
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xl){
+    .block3{
+        padding-top: 105px;
+        padding-bottom: 210px;
+
+        .text-box{
+            width: 60%;
+            padding-right: 0;
+        }
+
+        .colum-2{
+            padding-right: 70px;
+            display: grid;
+            align-items: end;
+            grid-template-columns: 1fr 1.2fr;
+
+            .image{
+                padding-right: 50px;
+                height: 747px;
+            }
+
+            .statistics-wrap{
+                padding: 0;
+
+                .statistics{
+                    padding: 0;
+                    display: block;
+
+                    .element{
+                        padding: 0 0 20px;
+
+                        .text{
+                            .underline{
+                                left: 0;
+                                bottom: -15px;
+                            }
+                        }
+                    }
+                }
+
+                .button{
+                    display: none;
+                }
+            }
+        }
+    }
+}

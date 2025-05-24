@@ -1,0 +1,136 @@
+
+
+.carusel-wrap{
+    position: relative;
+    padding: 227px 30px 30px;
+
+    .carusel{
+        
+        .carusel-content{
+            padding-bottom: 595px;
+
+            h2{
+                font-family: $font-second;
+                color: $color-black;
+                text-align: center;
+            }
+
+            .img-wrap{
+                width: calc(100% - 30px);
+                padding-top: 90px;
+                position: absolute;
+                display: grid;
+                justify-items: end;
+                gap: 50px;
+
+                .imagn{
+                    max-width: 369px;
+                    max-height: 269px;
+                }
+
+                .signature{
+                    width: 288px;
+                    height: 165px;
+                    margin-right: 10px;
+                    padding-left: 10px;
+                    
+                    img{
+                        transform: rotate(-10.14deg) ;
+                        width: 75%;
+                    }
+                    .row{
+
+                        img:nth-of-type(1){
+                            transform: rotate(-10deg) translate(17px, 0px);
+                            width: 55%;  
+                        }
+
+                        img:nth-of-type(2){
+                            transform: rotate(-10.14deg) translate(76px, -25px);
+                            width: 73%;
+                        }
+                    }
+                }
+            }
+        }
+
+        .point-wrap{
+            display: flex;
+            justify-content: end;
+            gap: 8px;
+
+            .point{
+                border-radius: 50%;
+                padding: 4.68px;
+                border: 2px solid $color-blue;
+
+                &.active{
+                    background-color: $color-blue;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xl){
+    .carusel-wrap{
+        padding: 272px 100px 75px;
+
+        .carusel{
+
+
+            .carusel-content{
+                gap: 0;
+                padding-bottom: 975px;
+
+                h2{
+                    font-size: 82px;
+                    padding: 0 100px 0 50px;
+                }
+
+                .img-wrap{
+                    width: calc(100% - 100px);
+                    justify-items: start;
+                    padding-left: 50px;
+                    gap: 30px;
+
+                    .imagn{
+                        max-width: 100%;
+                        max-height: 100%;
+                        width:100%;
+                        object-fit: cover;
+                        height: 637px;              
+                    }
+
+                    .signature{
+                        width: 500px;
+                        margin-right: 10px;
+                        padding-left: 10px;
+                        
+                        .row{
+                            display: flex;
+                            
+                            img:nth-of-type(1){
+                                transform: rotate(-10deg) translate(17px, 0px);
+                                width: 58%;  
+                            }
+
+                            img:nth-of-type(2){
+                                transform: rotate(-10.14deg) translate(75px, -75px);
+                                width: 73%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .point-wrap{
+
+                .point{
+                    padding: 6px;
+                    border: 2px solid $color-blue;
+                }
+            }
+        }
+    }
+}

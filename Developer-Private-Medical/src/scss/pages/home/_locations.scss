@@ -1,0 +1,113 @@
+.locations-wrap{
+    position: relative;
+    padding-top: 60px;
+
+    p{
+        font-weight: 800;
+        color: $color-black !important;
+    }
+
+    .locations-box{
+        
+        
+        .locations{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            position: relative;
+            padding-bottom: 160px;
+            color: $color-black !important;
+
+
+            h1{
+                font-family: $font-second;
+                color: $color-black !important;
+                padding: 30px 0 50px;
+            }
+
+            .button{
+                margin: 0;
+                color: $color-black !important;
+                border: 1px solid $color-black;
+            }
+        }
+
+        .post-wrap{
+            display: none;
+        }
+    }
+
+    .img-bottom{
+        position: absolute;
+        bottom: -186px;
+        right: 0;
+        width: 360px;
+        height: 271px;
+        background-image: url(/dist/images/img/img-5.png);
+        background-size: cover;
+    }
+
+}
+
+
+@media (min-width: $breakpoint-xl){
+
+    .locations-wrap{
+        padding-bottom: 140px;
+        padding-top: 215px;
+        padding-right: 50px;
+
+        .locations-box{
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+
+            .locations{
+                position: relative;
+                padding-top: 0px;
+                padding-bottom: 0%;
+                color: $color-black !important;
+
+                p{
+                    font-weight: 800;
+                    color: $color-black !important;
+                }
+
+                h1{
+                    font-family: $font-second;
+                    color: $color-black !important;
+                    padding: 30px 0 50px;
+                    line-height: 142px;
+                }
+
+                .button{
+                    margin: 0;
+                    color: $color-black !important;
+                    border: 1px solid $color-black;
+                } 
+            }
+
+            .post-wrap{
+                display: block;
+                padding-top: 70px;
+                padding-left: 30px;
+
+                img{
+                    width: 100%;
+                }
+
+                p{
+                    padding-top: 30px;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $color-black;
+                }
+            }  
+        }
+        
+        .img-bottom{
+            bottom: -269px;
+            width: 568px;
+            height: 356px;
+        }
+    }
+}
