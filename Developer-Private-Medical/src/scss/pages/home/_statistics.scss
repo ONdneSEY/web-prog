@@ -1,6 +1,5 @@
 .statistics-wrap{
     position: relative;
-    z-index: -3;
     padding-top: 226px;
 
     p{
@@ -72,6 +71,18 @@
         }
 
         .slider2{
+            position: relative;
+            overflow: hidden;
+
+            &.slide-out {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            &.slide-in {
+                opacity: 1;
+                transform: translateX(0);
+            }
 
             img{
                 width: 100%;
@@ -99,8 +110,9 @@
                     display: flex;
                     gap: 4px;
                     margin: 30px 0 40px;
+                    opacity: 1 !important;
 
-                    .point{
+                    .point2{
                         border-radius: 50%;
                         padding: 5px;
                         border: 1px solid $color-text;
@@ -123,7 +135,7 @@
 @media (min-width: $breakpoint-xl){
     .statistics-wrap{
         padding-top: 100px;
-        padding-bottom: 52%;
+        padding-bottom: 70%;
 
         p{
             text-align: start;

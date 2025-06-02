@@ -9,11 +9,34 @@
     transition: 0.6s;
 }
 body{
-    background-image: url(/dist/images/bg/body.png);
-    background-size: 100%;
-    background-repeat: repeat-y;
     background-color: #FFFCF2;
 }
+
+.content{
+    position: relative;
+
+    .bg-filt{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-image: url(/dist/images/bg/body.png);
+        background-size: contain;
+        background-repeat: repeat-y;
+        opacity: 0.8;
+        z-index: -1;
+    }
+
+    .bg-grid{
+        background-image: url(/dist/images/bg/body.png) !important;
+        background-size: 100% 100% !important;
+        background-repeat: repeat-y !important;
+    }
+
+}
+
 .flex{
     display: flex;
 }
@@ -39,6 +62,10 @@ body{
     padding-right: 30px;
 }
 
+.m-inline{
+    margin-left: 30px;
+    margin-right: 30px;
+}
 h1{
     font-size: 42px;
 }
@@ -74,6 +101,7 @@ p{
     background: $gradient-blue !important;
 }
 
+
 a{
     text-decoration: none;
 }
@@ -94,22 +122,31 @@ a{
     }
 
     img{
-        width: 100%;
-        height: 100%;
-        max-width: 17px;
-        max-height: 17px;
+        padding: 0 !important;
+        width: 17px !important;
+        height: 17px !important;
     }
 }
 
 
 
+
+
 @media (min-width: $breakpoint-xl){
+    h1{
+        font-size: 118px;
+    }
+    
     h2{
         font-size: 70px;
-    }
+    }  
     h3{
-        font-size: 46px;
-    }    
+        font-size: 60px;
+        
+    }
+    p{
+        font-size: 19px;
+    } 
     
     .m-right{
         margin-right: 100px;
@@ -124,19 +161,8 @@ a{
         padding-right: 100px;
     }
 
-    h1{
-        font-size: 118px;
-    }
-
-    h2{
-        font-size: 42px;
-    }
-
-    h3{
-        font-size: 60px;
-        
-    }
-    p{
-        font-size: 19px;
+    .m-inline{
+        margin-left: 100px;
+        margin-right: 100px;
     }
 }

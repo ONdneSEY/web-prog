@@ -22,9 +22,11 @@
                 display: grid;
                 justify-items: end;
                 gap: 50px;
+                will-change: transform, opacity;
 
                 .imagn{
-                    max-width: 369px;
+                    width: 80%;
+                    object-fit: cover;
                     max-height: 269px;
                 }
 
@@ -50,6 +52,34 @@
                             width: 73%;
                         }
                     }
+                }
+
+                &.slide-out-left {
+                    animation: slideOutLeft 0.5s forwards;
+                }
+                &.slide-out-right {
+                    animation: slideOutRight 0.5s forwards;
+                }
+                &.slide-in-left {
+                    animation: slideInLeft 0.5s forwards;
+                }
+                &.slide-in-right {
+                    animation: slideInRight 0.5s forwards;
+                }
+
+                @keyframes slideOutLeft {
+                    to { transform: translateX(-100%); opacity: 0; }
+                }
+                @keyframes slideOutRight {
+                    to { transform: translateX(100%); opacity: 0; }
+                }
+                @keyframes slideInLeft {
+                    from { transform: translateX(-100%); opacity: 0; }
+                    to { transform: translateX(0); opacity: 1; }
+                }
+                @keyframes slideInRight {
+                    from { transform: translateX(100%); opacity: 0; }
+                    to { transform: translateX(0); opacity: 1; }
                 }
             }
         }

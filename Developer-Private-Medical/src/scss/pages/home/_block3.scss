@@ -22,8 +22,10 @@
     }
 
     .statistics-wrap{
-        padding: 0;
+        display: grid;
+        justify-items: center;
         padding-top: 55px;
+        padding-bottom: 35px;
         z-index: 0px;
         
         .statistics{

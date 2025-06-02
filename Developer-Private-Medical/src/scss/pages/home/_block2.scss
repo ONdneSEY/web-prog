@@ -3,26 +3,11 @@
     position: relative;
     padding-top: 100px;
     padding-bottom: 210px;
-    z-index: -2;
     display: grid;
     justify-items: start;
 
     &.block2-p{
         padding: 70px 30px 420px !important;
-    }
-
-    &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url(/dist/images/bg/body.png);
-        background-size: 100% 100%;
-        background-repeat: repeat-y;
-        opacity: 0.4;
-        z-index: -1;
     }
 
 
@@ -71,6 +56,7 @@
                 padding: 40px 0 0;
 
                 img{
+                    width: 100%;
                     max-width: 391px;
                 }
             }
@@ -115,7 +101,7 @@
         height: 266.91px;
         background-image: url(/dist/images/icon/img-list.png);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: 100% 100%;
         background-size: cover;
         bottom: 120px;
         right: 5px;
@@ -131,15 +117,50 @@
         background-size: cover;
         left: -30px;
         bottom: -173px;
+        z-index: 1;
+    }
+}
+
+@media (min-width: $breakpoint-m){
+    .block2{
+
+
+        &.block2-p{
+
+        }
+
+        .text-box{
+
+
+            .type2{
+
+            }
+
+            p{
+
+            }
+        }
+
+        .content-wrap{
+
+            &.right{
+            }
+
+            .content-box{
+                display: grid;
+                gap: 40px;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
     }
 }
 
 @media (min-width: $breakpoint-xl){
     .block2{
-        padding: 145px 100px 340px 50px;
+        padding: 145px 50px 340px 100px;
 
         &.block2-p{
-            padding: 145px 100px 250px 50px !important;
+            padding: 145px 100px 250px 70px !important;
         }
 
         .text-box{

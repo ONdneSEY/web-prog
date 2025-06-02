@@ -1,0 +1,139 @@
+.footer{
+    padding-top: 84px;
+    padding-bottom: 43px;
+
+    .button{
+        margin: 0;
+        gap: 15px;
+    }
+
+    .title{
+        font-family: $font-second;
+        color: $color-dairy;
+    }
+
+    .search-wrap{
+        padding-top: 66px;
+        padding-bottom: 85px;
+        display: grid;
+        justify-items: start;
+        
+        .search{
+            padding: 5px 0;
+            color: $color-text;
+            border: 0;
+            outline: 0;
+            border-bottom: 2px solid $color-text;
+            width: 100%;
+            background-color: transparent;
+            margin-bottom: 30px;
+
+            &::placeholder{
+                color: #FFFCF230;
+            }
+        } 
+    }
+
+    .wrap{
+        border-top: 1px solid $color-dairy;
+
+        .button-wrap{
+            padding-top: 30px;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                gap: 20px;
+            }
+
+            .text-botton{
+                display: none;
+            }
+        }
+
+        .list-wrap{
+            display: flex;
+            padding-top: 70px;
+
+            .colum{
+                display: flex;
+                flex-direction: column;
+
+                a{
+                    text-decoration: underline;
+                    font-size: 15px;
+                    color: $color-text;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+
+        .text-botton{
+            padding-top: 35px;
+            display: block;
+        }
+    }
+}
+
+
+@media (min-width: $breakpoint-xl){
+    .footer{
+        padding-top: 110px;
+        padding-bottom: 115px;
+
+
+        .title{
+            width: 80%;
+        }
+
+        .search-wrap{
+            display: flex;
+            width: 60%;
+
+            .search{
+                margin-bottom: 0;
+                margin-right: 25px;
+                font-size: 19px;
+
+                &::placeholder{
+                margin-bottom: 0;
+                margin-right: 25px;
+                font-size: 19px;
+            }
+            }
+            
+        }
+
+        .wrap{
+            display: flex;
+            justify-content: space-between;
+
+            .button-wrap{
+                padding-top: 75px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+
+                .text-botton{
+                    display: block;
+                }
+            }
+
+            .list-wrap{
+                padding-top: 75px;
+                gap: 70px;
+
+                a{
+                    font-size: 19px;
+                    line-height: 25px;
+                }
+            }
+
+            .text-botton{
+                display: none;
+            }
+        }
+    }
+}
