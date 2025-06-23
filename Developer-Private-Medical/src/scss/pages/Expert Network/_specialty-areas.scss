@@ -1,0 +1,59 @@
+.specialty-areas{
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    .list-wrap{
+        display: grid;
+        gap: 30px;
+        list-style-type: none;
+
+        .list-item{
+            font-weight: 300;
+            font-size: 37px;
+
+            a{
+                font-family: $font-second;
+            }
+        }
+    }
+
+    .img-bottom{
+        margin-top: 20px;
+        width: 100%;
+        display: grid;
+        justify-items: end;
+
+        img{
+           width: 70%;
+           height: 100%;
+           object-fit: cover; 
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xl){
+    .specialty-areas{
+        padding-top: 100px;
+        padding-bottom: 130px;
+
+        .list-wrap{
+            .list-item{
+                font-size: 70px;
+            }
+        }
+
+        .img-bottom{
+            width: 45%;
+            max-width: 513px;
+            position: absolute;
+            bottom: 70px;
+            right: 70px;
+            margin: 0px;
+            
+            img{
+                width: 100%;
+            }
+        }
+    }
+}

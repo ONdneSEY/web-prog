@@ -1,6 +1,6 @@
 @import "../common/variables";
 
-*{
+* {
     box-sizing: border-box;
     font-family: $font-main;
     font-weight: 400;
@@ -8,14 +8,15 @@
     color: $color-text;
     transition: 0.6s;
 }
-body{
+
+body {
     background-color: #FFFCF2;
 }
 
-.content{
+.content {
     position: relative;
 
-    .bg-filt{
+    .bg-filt {
         content: "";
         position: absolute;
         top: 0;
@@ -29,85 +30,145 @@ body{
         z-index: -1;
     }
 
-    .bg-grid{
-        background-image: url(/dist/images/bg/body.png) !important;
-        background-size: 100% 100% !important;
-        background-repeat: repeat-y !important;
+    .bg-grid {
+        // background-image: url(/dist/images/bg/body.png) !important;
+        // background-size: 100% 100% !important;
+        // background-repeat: repeat-y !important;
     }
 
 }
 
-.flex{
+.img-bottom {
+    position: absolute;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.flex {
     display: flex;
 }
-.grid{
+
+.grid {
     display: grid;
 }
-.m-top{
+
+.m-top {
     margin: 20px;
 }
-.m-auto{
+
+.m-auto {
     margin-left: auto;
     margin-right: auto;
 }
-.m-right{
+
+.m-right {
     margin-right: 30px;
 }
 
-.m-left{
+.m-left {
     margin-left: 30px;
 }
-.p-inline{
+
+.p-inline {
     padding-left: 30px;
     padding-right: 30px;
 }
 
-.m-inline{
+.p-buttom-s {
+    padding-bottom: 30px;
+}
+
+.p-buttom-m {
+    padding-bottom: 50px;
+}
+
+.m-inline {
     margin-left: 30px;
     margin-right: 30px;
 }
-h1{
-    font-size: 42px;
-}
 
-.max-width{
+.max-width {
     max-width: 1178px;
 }
 
-.m-auto{
+.m-auto {
     margin-left: auto;
     margin-right: auto;
 }
-h1{
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-second;
+    font-weight: 300;
+}
+
+.align-items-end {
+    align-items: end;
+}
+
+.align-items-start {
+    align-items: start;
+}
+
+.align-content-space-between {
+    align-content: space-between;
+}
+
+h1 {
     font-size: 54px;
 }
 
-h2{
+h2 {
     font-size: 42px;
 }
 
-h3{
+h3 {
     font-size: 32px;
-    
+
 }
-p{
+
+.parag {
+    font-weight: 800;
+}
+
+p {
     font-size: 16px;
 }
-.bg-green{
+
+.black-bt {
+    border: 1px solid $color-black !important;
+}
+
+.black-p {
+    color: $color-black !important;
+}
+
+.bg-green {
     background: $gradient-green !important;
 }
 
-.bg-blue{
+.bg-blue {
     background: $gradient-blue !important;
 }
 
-
-a{
-    text-decoration: none;
+.grid-row-1 {
+    grid-row: 1 / 2;
 }
-.button{
+
+.text-fat {
+    font-weight: 800;
+}
+
+.button {
     padding: 20px;
-    margin-left: 18px;
     border: 1px solid $color-text;
     border-radius: 5px;
     display: flex;
@@ -115,13 +176,13 @@ a{
     font-family: $font-second;
     align-items: center;
 
-    p{
+    p {
         font-size: 16px;
         line-height: 16px;
         color: $color-text;
     }
 
-    img{
+    img {
         padding: 0 !important;
         width: 17px !important;
         height: 17px !important;
@@ -132,37 +193,52 @@ a{
 
 
 
-@media (min-width: $breakpoint-xl){
-    h1{
+@media (min-width: $breakpoint-xl) {
+    h1 {
         font-size: 118px;
     }
-    
-    h2{
+
+    h2 {
         font-size: 70px;
-    }  
-    h3{
-        font-size: 60px;
-        
     }
-    p{
+
+    h3 {
+        font-size: 60px;
+
+    }
+
+    h4 {
+        font-size: 54px;
+
+    }
+
+    p {
         font-size: 19px;
-    } 
-    
-    .m-right{
+    }
+
+    .m-right {
         margin-right: 100px;
     }
 
-    .m-left{
+    .m-left {
         margin-left: 100px;
     }
 
-    .p-inline{
+    .p-inline {
         padding-left: 100px;
         padding-right: 100px;
     }
 
-    .m-inline{
+    .m-inline {
         margin-left: 100px;
         margin-right: 100px;
     }
+}
+
+.paste {
+    padding-top: 70px;
+    padding-bottom: 60px;
+    display: grid;
+    justify-items: start;
+    gap: 60px;
 }

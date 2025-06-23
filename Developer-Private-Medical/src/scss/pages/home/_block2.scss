@@ -10,9 +10,11 @@
         padding: 70px 30px 420px !important;
     }
 
+    &.medical-difference-s{
+        padding-bottom: 160px !important;
+    }
 
     .text-box{
-
         p{
             font-weight: 800;
             padding-bottom: 20px;
@@ -31,12 +33,18 @@
             border-top: 1px solid $color-text;
             padding: 20px 0 40px;
 
+            &.speciality-st{
+                border-top: 1px solid $color-black;
+            }
             img{
                 height: auto;
                 width: 100%;
             }
 
             .text-box{
+                display: grid;
+                justify-items: start;
+
                 h3{
                     font-weight: 200;
                     padding: 30px 0 20px;
@@ -44,6 +52,10 @@
 
                 p{
                     line-height: 21px;
+                }
+
+                .grid{
+                    justify-items: start;
                 }
             }
         }
@@ -81,6 +93,14 @@
 
     .button{
         width: auto;
+
+        &.margin-bt{
+            margin: 10px 0 0;
+        }
+
+        p{
+            padding: 0;
+        }
     }
 
     .bottom-left{
@@ -124,34 +144,12 @@
 @media (min-width: $breakpoint-m){
     .block2{
 
-
-        &.block2-p{
-
-        }
-
-        .text-box{
-
-
-            .type2{
-
-            }
-
-            p{
-
-            }
-        }
-
-        .content-wrap{
-
-            &.right{
-            }
-
             .content-box{
                 display: grid;
                 gap: 40px;
                 grid-template-columns: 1fr 1fr;
             }
-        }
+        
     }
 }
 
@@ -159,8 +157,17 @@
     .block2{
         padding: 145px 50px 340px 100px;
 
+        &.speciality-st{
+            padding-top: 100px;
+            padding-bottom: 0px;
+        }
+
         &.block2-p{
             padding: 145px 100px 250px 70px !important;
+        }
+
+        &.medical-difference-s{
+            padding-bottom: 147px !important;
         }
 
         .text-box{
@@ -181,6 +188,9 @@
             display: grid;
             grid-template-columns: 2fr 1fr;
 
+            &.speciality-st{
+                grid-template-columns: 1fr 3fr;
+            }
             &.right{
                 grid-template-columns: 1fr 2fr;
             }
@@ -202,7 +212,6 @@
                 
                 .text-box{
                     width: auto;
-                    display: grid;
                     align-content: space-between;
                     padding: 0 30px 0 0;
 

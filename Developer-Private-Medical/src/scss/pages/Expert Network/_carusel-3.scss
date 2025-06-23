@@ -1,0 +1,65 @@
+.carusel-3{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .tow-column-wrap{
+        display: grid;
+        gap: 40px;
+
+        .column{
+           display: grid;
+           justify-items: start;
+
+            .carusel-img{
+                width: 100%;
+                
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .point-wrap{
+                display: flex;
+                gap: 10px;
+                padding-top: 20px;
+
+                .point{
+                    padding: 5px;
+                    border-radius: 50%;
+                    border: 2px solid $color-text;
+
+                    &.active{
+                        background: $color-text;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xl){
+    .carusel-3{
+        padding-top: 130px;
+        padding-bottom: 90px;
+
+        .tow-column-wrap{
+            grid-template-columns: 1fr 1fr;
+            gap: 0px;
+
+            .column{
+                align-items: start;
+                .carusel-img{
+                    padding-right: 70px;
+                }
+
+                .point-wrap{
+                    .point{
+                        padding: 6px;
+                    }
+                }
+            }
+        }
+    }
+}

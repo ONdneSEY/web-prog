@@ -13,8 +13,7 @@
 
     .inform-box{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 40px;
+        gap: 20px;
 
         .element{
             display: grid;
@@ -44,6 +43,15 @@
                 color: $color-black;
                 border: 1px solid $color-black;
             }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-m){
+    .inform-wrap{
+        .inform-box{
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
         }
     }
 }

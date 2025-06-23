@@ -1,0 +1,188 @@
+.inform-posts-wrap {
+    text-align: center;
+    color: $color-black;
+    padding-top: 90px;
+    padding-bottom: 140px;
+    position: relative;
+
+    p,
+    h2,
+    h3,
+    a {
+        color: $color-black;
+    }
+
+    h3 {
+        font-family: $font-second;
+    }
+
+    .title {
+        padding-bottom: 40px;
+    }
+
+    .post-box {
+        text-align: left;
+        padding-top: 50px;
+
+        .teax-dox {
+            padding-bottom: 80px;
+
+            .parag {
+                font-weight: 800;
+            }
+
+            h3 {
+                padding: 12px 0;
+            }
+
+            .descript {
+                font-size: 14px;
+            }
+        }
+
+        .img-box {
+            .img {
+                object-fit: cover;
+            }
+        }
+
+        &.post-box1 {
+            .img-box {
+                .img {
+                    width: calc(100% + 30px);
+                }
+            }
+        }
+
+        &.post-box2 {
+            .img-box {
+                .img {
+                    width: 100%;
+                }
+            }
+        }
+
+        &.post-box3 {
+            .img-box {
+                .img {
+                    width: calc(100% + 30px);
+                }
+            }
+        }
+
+        &.post-box4 {
+            .img-box {
+                .img {
+                    margin-left: -30px;
+                    width: calc(100% + 30px);
+                }
+            }
+        }
+    }
+
+    .headline-bottom {
+        padding-top: 80px;
+    }
+
+    .img-buttom {
+        position: absolute;
+        bottom: -217px;
+        left: 0;
+        height: 280px;
+        width: 204px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xl) {
+    .inform-posts-wrap {
+        padding-top: 120px;
+        padding-bottom: 300px;
+
+        .title {
+            padding-bottom: 120px;
+        }
+
+        .post-box {
+            padding-top: 0px;
+            display: grid;
+            gap: 130px;
+            grid-template-columns: 1fr 1fr;
+
+            .teax-dox {
+                padding-bottom: 0px;
+
+                h3 {
+                    padding: 24px 0;
+                }
+
+                .descript {
+                    font-size: 16px;
+                }
+            }
+
+            &.post-box1 {
+                align-items: end;
+
+                .teax-dox{
+                    padding-bottom: 200px;
+                }
+                .img-box {
+                    .img {
+                        margin-bottom: 50px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &.post-box2 {
+                .img-box {
+                    .img {
+                        padding-left: 50px;
+                        width: 100%;
+                    }
+                }
+            }
+
+            &.post-box3 {
+                align-items: center;
+                padding-bottom: 90px;
+
+                .img-box {
+                    .img {
+                        padding-left: 120px;
+                        width: calc(100% + 100px);
+                    }
+                }
+            }
+
+            &.post-box4 {
+                .img-box {
+                    .img {
+                        margin-left: -100px;
+                        width: calc(100% + 130px);
+                    }
+                }
+            }
+        }
+
+        .headline-bottom {
+            position: relative;
+            z-index: 1;
+        }
+
+        .img-buttom {
+            position: absolute;
+            bottom: -80px;
+            left: 100px;
+            height: 444px;
+            width: 324px;
+            z-index: 0;
+        }
+    }
+}

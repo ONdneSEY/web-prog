@@ -1,0 +1,45 @@
+.post-wrap{
+    display: grid;
+    justify-items: end;
+    padding-top: 230px;
+    padding-left: 30px;
+
+    .img-wpap{
+        position: relative;
+        width: calc(100% + 30px);
+
+        height: 240px;
+        .img-post{
+            position: absolute;
+            right: -30px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .img-signature{
+        max-width: 640px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (min-width: $breakpoint-xl){
+    .post-wrap{
+        display: grid;
+        justify-items: end;
+        padding-top: 134px;
+        padding-left: 100px;
+
+        .img-wpap{
+            width: calc(100% + 100px);
+            height: 542px;
+
+            .img-post{
+                right: -100px;
+            }
+        }
+    }
+}

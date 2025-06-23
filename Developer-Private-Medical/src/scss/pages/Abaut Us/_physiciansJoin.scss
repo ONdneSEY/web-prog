@@ -1,0 +1,153 @@
+.physicians-join-wrap{
+    padding-top: 200px;
+
+    *{
+        color: $color-black;
+    }
+    .parag{
+        padding-bottom: 15px;
+    }
+
+    .carusel-box{
+        padding-top: 50px;
+
+        .content-wrap{
+
+
+            .post-box{
+
+
+                img{
+                    background-color: #E1DDD0;
+                    margin-left: -30px;
+                    width: calc(100% + 30px);
+                }
+
+                .cont-box{
+                    padding-top: 15px;
+                    padding-bottom: 40px;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .point-wrap{
+                        gap: 10px;
+
+                        .point{
+                            padding: 5px;
+                            border-radius: 50%;
+                            border: 1px solid $color-black;
+
+                            &.active{
+                                background: $color-black;
+                            }
+                        }
+                    }
+                }
+
+                .name{
+                    font-weight: 500;
+                }
+            }
+
+            .text-content{
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+
+                .element{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+
+                .button{
+                    border: 1px solid $color-black;
+
+                    p{
+                        color: $color-black !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xl){
+    .physicians-join-wrap{
+        padding-top: 340px;
+
+        .parag{
+            padding-bottom: 50px;
+        }
+
+        .carusel-box{
+            padding-top: 70px;
+
+            .content-wrap{
+                display: grid;
+                gap: 100px;
+                grid-template-columns: 1fr 1fr;
+
+                .post-box{
+                    padding-bottom: 100px;
+
+                    img{
+                        margin-left: -100px;
+                        width: calc(100% + 100px);
+                    }
+
+                    .cont-box{
+                        padding-top: 15px;
+                        padding-bottom: 40px;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        .point-wrap{
+                            gap: 10px;
+
+                            .point{
+                                padding: 6px;
+                                border-radius: 50%;
+                                border: 2px solid $color-black;
+
+                                &.active{
+                                    background: $color-black;
+                                }
+                            }
+                        }
+                    }
+
+                    .name{
+                        font-weight: 500;
+                    }
+                }
+
+                .text-content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: space-between;
+
+
+                    h3{
+                        font-size: 30px;
+                    }
+
+                    .element{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start;
+                    }
+
+                    .button{
+                        border: 1px solid $color-black;
+
+                        p{
+                            color: $color-black !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

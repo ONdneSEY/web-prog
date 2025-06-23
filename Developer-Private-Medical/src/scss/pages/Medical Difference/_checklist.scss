@@ -1,0 +1,98 @@
+.checklist-wrap{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .tow-column-wrap{
+        display: grid;
+        justify-items: start;
+        align-items: start;
+
+        .column{
+            display: grid;
+            justify-items: start;
+
+            .img-box{
+                width: calc(100% + 30px);
+                margin-left:  -30px;
+                object-fit: cover;
+            }
+
+            .num-paragraph{
+                font-size: 100px;
+                font-family: $font-second;
+            }
+
+            .line{
+                width: 100%;
+                height: 3px;
+                background: $color-black;
+            }
+            .descript{
+                font-size: 32px;
+                padding-top: 10px;
+                font-family: $font-second;
+                padding-bottom: 50px;
+            }
+
+            .arrow-download{
+
+                &.pc{
+                    display: none;
+                }
+
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xl){
+    .checklist-wrap{
+        padding-top: 150px;
+        padding-bottom: 120px;
+
+        .tow-column-wrap{
+            
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+
+            .column{
+                position: relative;  
+
+                .img-box{
+                    margin-top: 2%;
+                    width: calc(55% + 100px);
+                    margin-left:  -100px;
+                }
+
+                .num-paragraph{
+                    font-size: 100px;
+                }
+
+                .descript{
+                    font-size: 32px;
+                    padding-top: 10px;
+                    font-family: $font-second;
+                    padding-bottom: 50px;
+                }
+
+                .arrow-download{
+
+                    &.pc{
+                        display: block;
+                    }
+
+                    &.mobile{
+                        display: none;
+                    }
+
+                    position: absolute;
+                    bottom: 0;
+                    left: -584px;
+                    height: 322px;
+                    width: 584px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,70 @@
+.relationships{
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    .tree-column{
+        gap: 30px;
+
+        .column{
+            justify-items: start;
+
+            .img-box{
+                width: calc(100% + 30px);
+                margin-left: -30px;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .line{
+                width: 15%;
+                height: 1px;
+                background: $color-black;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+@media (min-width: $breakpoint-xl){
+    .relationships{
+        padding-top: 110px;
+        padding-bottom: 120px;
+
+        .tree-column{
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+            align-items: end;
+
+            .column{
+                
+
+                &.align-content-space-between{
+                    height: 100%;
+                }
+
+                &.align-items-end{
+                    padding-left: 50px;
+                }
+
+                .img-box{
+                    &.signature-img{
+                        width: calc(100% + 200px);
+                        margin-bottom: -30px;
+                    }
+                    width: calc(100% + 100px);
+                    margin-left: -100px;
+                }
+
+                .line{
+                    max-width: 70px;
+                    width: 22%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

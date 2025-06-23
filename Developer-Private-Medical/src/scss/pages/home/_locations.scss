@@ -2,6 +2,10 @@
     position: relative;
     padding-top: 60px;
 
+    &.p-buttom1{
+        padding-bottom: 60px;
+    }
+
     p{
         font-weight: 800;
         color: $color-black !important;
@@ -56,6 +60,10 @@
         padding-bottom: 140px;
         padding-top: 215px;
         padding-right: 50px;
+
+         &.p-buttom1{
+            padding-bottom: 246px;
+        }
 
         .locations-box{
             display: grid;
